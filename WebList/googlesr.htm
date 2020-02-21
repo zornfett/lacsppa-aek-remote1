@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Google SR</title>
+    <style type="text/css">
+       .final {
+         color: black;
+         padding-right: 3px; 
+       }
+      .interim {
+         color: gray;
+       }
+        .button
+        {
+            -webkit-appearance: button;
+            height: 30px;
+            width: 100px;
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+// <![CDATA[
+        var recognizing = false;
+        var started = false;
+        var recognition = null;
+        var final_transcript = '';
+        var interim_transcript='';
+        var ignore_onend = false;
+        var sr_param = null;
+        function showInfo(v) {
+            document.getElementById("sp_info").innerHTML = v;
+        }
+        function showButtons(style) {
+        }
+
+        var two_line = /\n\n/g;
+        var one_line = /\n/g;
+        function linebreak(s) {
+            return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
+        }
+        var first_char = /\S/;
+        function capitalize(s) {
+            return s.replace(first_char, function (m) { return m.toUpperCase(); });
+        }
+        function capitalize(s) {
+            return s.replace(first_char, function (m) { return m.toUpperCase(); });
+        }
+        function do_cmd(cmd,v) {
+            /*
+            if (window.parent)
+                if (window.parent.window)
+                    if (window.parent.window.on_sr_win_cmd) {
+                        window.parent.window.on_sr_win_cmd(cmd, sr_param,v);
+                    }
+            */
+            var opener = window.dialogArguments;
+            window.opener.on_sr_win_cmd(cmd, sr_param, v);
+            window.close();
+        }
+        function do_ok() {
+            var txt=final_transcript;
+            if (interim_transcript!='')
+            {
+               if (txt!='')
+                  txt=txt+' ';
+               txt=txt+interim_transcript
+            }
+            do_cmd("sr_ok", txt);
+        }
+        function do_cancel() {
+            stop();
+            do_cmd("sr_cancel", '');
+        }
+        function start() {
+            if (started)
+                return;
+            started = true;
+            set_btn_disabled();
+            document.getElementById("btn_ok").disabled = true;
+            final_transcript = '';
+            recognition.lang = 'en-US';
+            recognition.start();
+            ignore_onend = false;
+            final_span.innerHTML = '';
+            interim_span.innerHTML = '';
+            //start_img.src = 'mic-slash.gif';
+            showInfo('Click the "Allow" button above to enable your microphone.');
+            //showButtons('none');
+            start_timestamp = event.timeStamp;           
+        }
+        function stop() {
+            if (!started)
+                return;
+            started = false;
+            set_btn_disabled();
+            recognition.stop();          
+        }
+        function set_btn_disabled() {
+            document.getElementById("btn_start").disabled = started;
+            document.getElementById("btn_stop").disabled = !started;
+        }
+        function window_onload() {
+            /*
+            if (window.parent) {
+                if (window.parent.window)
+                    if (window.parent.window.set_sr_win)
+                        window.parent.window.set_sr_win(window);
+            }
+            */
+            if (!('webkitSpeechRecognition' in window)) {
+                document.getElementById("btn_start").disabled = true;
+                document.getElementById("btn_stop").disabled = true;
+                showInfo("Web Speech API is not supported by this browser. Upgrade to Chrome version 25 or later.");
+                return;
+            }
+            recognition = new webkitSpeechRecognition();
+            recognition.continuous = true;
+            recognition.interimResults = true;
+            recognition.onstart = function () {
+                recognizing = true;
+                showInfo('Speak now.');
+                //start_img.src = 'mic-animate.gif';
+            };
+            recognition.onerror = function (event) {
+                if (event.error == 'no-speech') {
+                    //start_img.src = 'mic.gif';
+                    started = false;
+                    set_btn_disabled();
+                    showInfo('No speech was detected. You may need to adjust your <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892"> microphone settings</a>.');
+                    ignore_onend = true;
+                }
+                if (event.error == 'audio-capture') {
+                    //start_img.src = 'mic.gif';
+                    started = false;
+                    set_btn_disabled();
+                    showInfo('No microphone was found. Ensure that a microphone is installed and that <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892"> microphone settings</a> are configured correctly.');
+                    ignore_onend = true;
+                }
+                if (event.error == 'not-allowed') {
+                    if (event.timeStamp - start_timestamp < 100) {
+                        showInfo('Permission to use microphone is blocked. To change, go to chrome://settings/contentExceptions#media-stream');
+                    } else {
+                        showInfo('Permission to use microphone was denied.');
+                    }
+                    ignore_onend = true;
+                }
+            };
+            recognition.onend = function () {
+                recognizing = false;
+                if (ignore_onend) {
+                    return;
+                }
+                started = false;
+                set_btn_disabled();
+                if (!final_transcript) {
+                    showInfo('Click on the start dictation button and begin speaking.');
+
+                    return;
+                }
+                showInfo('');
+                if (window.getSelection) {
+                    window.getSelection().removeAllRanges();
+                    var range = document.createRange();
+                    range.selectNode(document.getElementById('final_span'));
+                    window.getSelection().addRange(range);
+                }
+            };
+            recognition.onresult = function (event) {
+                interim_transcript = '';
+                for (var i = event.resultIndex; i < event.results.length; ++i) {
+                    if (event.results[i].isFinal) {
+                        final_transcript += event.results[i][0].transcript;
+                    } else {
+                        interim_transcript += event.results[i][0].transcript;
+                    }
+                }
+                final_transcript = capitalize(final_transcript);
+                final_span.innerHTML = linebreak(final_transcript);
+                interim_span.innerHTML =  linebreak(interim_transcript);
+              //  alert(final_transcript);
+              //  alert(interim_transcript);
+                if (final_transcript || interim_transcript) {
+                   document.getElementById("btn_ok").disabled = false;
+                }
+            };
+            showInfo('Click on the start dictation button and begin speaking.');
+            start();                 
+        }
+// ]]>
+    </script>
+
+</head>
+<body style="padding: 0px 0px 0px 0px; margin: 3px 3px 3px 3px; overflow-x: hidden;
+    overflow-y: hidden; background-color: White;" onload="return window_onload()">
+    <div style="position: absolute; left: 0px; right: 0px; top: 0px; height: 38px; padding-top: 10px;
+        padding-right: 5pt; text-align: right; overflow-x: hidden; overflow-y: hidden;">
+        <div style="position: absolute; left: 5px; right: 220px; top: 0px; height: 38px;
+            text-align: left; vertical-align: middle; line-height: 40px;">
+            <span id="sp_info">......</span>
+        </div>
+        <input id="btn_start" type="button" value="Start Dictation" class="button" onclick="return start()" />
+        <input id="btn_stop" type="button" value="Stop Dictation" disabled="true" class="button"
+            onclick="return stop()" />
+    </div>
+    <div style="position: absolute; left: 3px; right: 3px; top: 43px; bottom: 43px; padding: 5px;
+        border: 1px solid black;">
+        <span id="final_span" class="final"></span><span id="interim_span" class="interim"></span>
+        <!--<div contenteditable="true" style="position: absolute; border: 1px solid black; left: 5px;
+            right: 5px; top: 5px; bottom: 5px;">
+        </div>-->
+    </div>
+    <div style="position: absolute; left: 0px; right: 0px; bottom: 0px; height: 38px;
+        padding-top: 5pt; text-align: center;">
+        <input id="btn_ok" type="button" value="OK" class="button" onclick="return do_ok()" disabled="true"/>
+        <input id="btn_cancel" type="button" value="Cancel" class="button" onclick="return do_cancel()" />
+    </div>
+</body>
+</html>
