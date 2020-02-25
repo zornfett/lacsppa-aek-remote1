@@ -63,31 +63,9 @@
             var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
             if (evt.keyCode == 13) 
             {
-              //if (node.type == "text")) 
-              //{
-              //    alert(node.id); 
-              //}
-              //else 
+
                   return false; 
             }
-
-            /*
-            var doPrevent = false;
-            alert(evt.keyCode);
-            if (evt.keyCode == 8) {
-                if ((node.tagName.toUpperCase() === 'INPUT' && (node.type.toUpperCase() === 'TEXT' || node.type.toUpperCase() === 'PASSWORD'))
-             || node.tagName.toUpperCase() === 'TEXTAREA') {
-                    doPrevent = node.readOnly || node.disabled;
-                }
-                else {
-                    doPrevent = true;
-                }
-               
-                if (doPrevent)
-                //event.preventDefault();
-                    return false;
-            }
-            */
         }
         document.onkeypress = stopRKey;
     </script> 
@@ -184,7 +162,7 @@
      <td>
       <table border="0" cellpadding="0" width="100%">
         <tr>
-            <td valign="top" style="width:33%;">
+            <td valign="top" style="width:33%; OUTLINE: 2PX DOTTED PURPLE;">
                 <asp:WebPartZone ID="WebPartZone1" runat="server" HeaderText=" " 
                     Font-Names="Verdana" Width="95%"
                     BorderStyle="None"
@@ -212,7 +190,7 @@
                         HorizontalAlign="Left" />
                 </asp:WebPartZone>
             </td>
-            <td valign="top" style="width:33%">
+            <td valign="top" style="width:33%; OUTLINE: 2PX DOTTED GREEN;">
                 <asp:WebPartZone ID="WebPartZone2" runat="server" HeaderText=" " BorderColor="#CCCCCC"
                     Font-Names="Verdana" Padding="1" Style="margin-bottom: 2px" Width="95%" 
                     BorderStyle="None" PartChromePadding="0px"
@@ -240,7 +218,7 @@
                         HorizontalAlign="Left" />
                 </asp:WebPartZone>
             </td>        
-            <td valign="top" style="width:33%">
+            <td valign="top" style="width:33%; OUTLINE: 2PX DOTTED ORANGE;">
                  <asp:WebPartZone ID="WebPartZone3" runat="server" HeaderText=" " BorderColor="#CCCCCC"
                     Font-Names="Verdana" Padding="1" Style="margin-bottom: 2px" Width="95%" 
                     BorderStyle="None" PartChromePadding="0px"
