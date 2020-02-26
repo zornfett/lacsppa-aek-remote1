@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/cs-skin-elastic.css">
 
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
-	<link rel="stylesheet" href="../css/style-2020a.css">
+	<link rel="stylesheet" href="css/style-2020a.css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
    <%-- <script>
@@ -30,17 +30,35 @@
 	onbeforeunload="return submitforframe();" onkeydown="cancelBack();">
 	<form id="frmMain" runat="server">
 		<input type="hidden" name="UserType" id="UserType" runat="server" value="" />
+		<header>
+			<div class="head-top">
+				<img class="logo" src="img/logo/Sclarc_logo.png" />
+				<!-- <asp:Image id="titlelogo" runat="server" ImageUrl="img/logo/kea-live_text.jpg" Height="30px" Width="150px"></asp:Image> -->
+				<img class="powered-by" src="img/logo/pweredbykea.png" />
+				<!-- <asp:Image id="poweredby" runat="server" ImageUrl="img/logo/pweredbykea.png" Height="25px" Width="200px"></asp:Image> -->
+			</div>
+			<div class="head-bottom">
+				<div class="account-user">
+					ACCOUNT: <asp:Label ID="accountdesc" runat="server"></asp:Label>
+					USER: <asp:Label ID="username" runat="server"></asp:Label>
+				</div>
+				<div class="page-title">
+					<asp:Label ID="pagetitle" runat="server" Font-Bold="true" Font-Size="Small" ForeColor="#660033" Text=""></asp:Label>
+				</div>
+			</div>
+		</header>
+
 		<table border="0" cellpadding="0" style="border-collapse: collapse; width: 100%;">
-			<tr align="left" style="height: 30px;">
+<!-- 			<tr align="left" style="height: 30px;">
 				<td colspan="2">
 					<table border="0" cellpadding="0" style="border-collapse: collapse; width: 100%; height: 100%">
 						<tr height="30px">
 							<td width="1%"></td>
 							<td align="left" width="79%">
-								<asp:Image ID="titlelogo" runat="server" ImageUrl="img/logo/kea-live_text.jpg" Height="30px" Width="150px"></asp:Image>
+								LOGO IMAGE
 							</td>
 							<td width="17%" align="right">
-								<asp:Image ID="poweredby" runat="server" ImageUrl="img/logo/pweredbykea.png" Height="25px" Width="200px" Visible="false"></asp:Image>
+								POWERED-BY
 							</td>
 							<td width="3%"></td>
 						</tr>
@@ -52,18 +70,13 @@
 					<table border="0" cellpadding="0" style="border-collapse: collapse; width: 100%; height: 100%">
 						<tr height="20px">
 							<td width="1%"></td>
-							<td align="left" width="69%">&nbsp;&nbsp;  
-							  <font color="#006FC0"><b>Account:</b>
-								  <asp:Label ID="accountdesc" runat="server" Font-Bold="true"></asp:Label>
-								  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>User:</b>
-								  <asp:Label ID="username" runat="server" Font-Bold="true"></asp:Label>
-								  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							  <asp:Label ID="clientinfo" runat="server" Font-Bold="True" ForeColor="#006666"></asp:Label>
+							<td align="left" width="69%">
+								ACCT / USER
 							  </font>
 							</td>
 							<td width="25%" align="right">
 								<font color="#006FC0">
-									<asp:Label ID="pagetitle" runat="server" Font-Bold="true" Font-Size="Small" ForeColor="#660033" Text=""></asp:Label>
+									PAGE TITLE
 								</font>
 							</td>
 							<td width="5%"></td>
@@ -73,7 +86,7 @@
 			</tr>
 			<tr style="height: 2px">
 				<td colspan="2" style="background-color: #137AC5"></td>
-			</tr>
+			</tr> -->
 			<tr id="maindiv" valign="top" align="center" style="height: 850px; width: 100%;">
 				<td valign="top" align="left" style="width: 10%; background-color: #EAF4FF">
 					<table border="0" cellpadding="0" style="border-collapse: collapse" width="100%">
@@ -196,7 +209,7 @@
 	<div id="bg" runat="server">
 	</div>
 	<div id="OnCallTrxDiv" style="overflow: auto;" runat="server">
-		<iframe src="WebList/webOnCallTrxList.aspx" style="width: 100%; height: 100%; OUTLINE: 2PX DOTTED BLUE;" />
+		<iframe src="WebList/webOnCallTrxList.aspx" style="width: 100%; height: 100%;" />
 	</div>
 </body>
 </html>
