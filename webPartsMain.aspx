@@ -35,6 +35,8 @@
 	<title></title>
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/style-2020a.css">
+	<link rel="stylesheet" href="css/prototype-styles.css">
+
 	<script type="text/JavaScript" src="js/common.js"></script>  
 	<script type="text/javascript" language="javascript">
 		function resizeframe(obj) {

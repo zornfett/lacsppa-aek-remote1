@@ -1,7 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="webMain.aspx.cs" Inherits="Virweb2.webMain" %>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <html>
 <head runat="server">
 
@@ -13,8 +20,16 @@
 	<link rel="stylesheet" href="css/flag-icon.min.css">
 	<link rel="stylesheet" href="css/cs-skin-elastic.css">
 
-	<link href="css/style.css" type="text/css" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style-2020a.css">
+	<!-- <link href="css/style.css" type="text/css" rel="stylesheet" /> -->
+	<!-- <link rel="stylesheet" href="css/style-2020a.css"> -->
+	<link rel="stylesheet" href="css/per-sufee.css">
+	<link rel="stylesheet" href="css/prototype-styles.css">
+
+	<link href="css/jqvmap.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+	<!-- <link rel="apple-touch-icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="images/favicon.png"> -->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
    <%-- <script>
@@ -26,16 +41,28 @@
 	<script type="text/JavaScript" src="js/common.js"></script>
 	<script type="text/JavaScript" src="js/WebMain.js"></script>
 </head>
-<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" style="overflow: hidden;"
-	onbeforeunload="return submitforframe();" onkeydown="cancelBack();">
-	<form id="frmMain" runat="server">
-		<input type="hidden" name="UserType" id="UserType" runat="server" value="" />
-		<header>
-			<div class="head-top">
-				<img class="logo" src="img/logo/Sclarc_logo.png" />
+
+<body id="home">
+<form id="frmMain" runat="server">
+<input type="hidden" name="UserType" id="UserType" runat="server" value="" />
+
+	<!-- Left Panel -->
+	<aside id="left-panel" class="left-panel">
+		<nav class="navbar navbar-expand-sm navbar-default">
+
+			<div class="navbar-header">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars"></i>
+				</button>
+				<img class="logo" src="http://zornfett.com/client/appscal/layout-test/images/lanterman-logo.png" />
 				<!-- <asp:Image id="titlelogo" runat="server" ImageUrl="img/logo/kea-live_text.jpg" Height="30px" Width="150px"></asp:Image> -->
+				<a class="navbar-brand hidden" href="./"><img src="http://zornfett.com/client/appscal/layout-test/images/lanterman-logo.png" alt="Logo"></a>
+			</div>
+
+<!-- 			
+			<div class="head-top">
 				<img class="powered-by" src="img/logo/pweredbykea.png" />
-				<!-- <asp:Image id="poweredby" runat="server" ImageUrl="img/logo/pweredbykea.png" Height="25px" Width="200px"></asp:Image> -->
+				<!-- <asp:Image id="poweredby" runat="server" ImageUrl="img/logo/pweredbykea.png" Height="25px" Width="200px"></asp:Image>
 			</div>
 			<div class="head-bottom">
 				<div class="account-user">
@@ -45,62 +72,322 @@
 				<div class="page-title">
 					<asp:Label ID="pagetitle" runat="server" Font-Bold="true" Font-Size="Small" ForeColor="#660033" Text=""></asp:Label>
 				</div>
+			</div> -->
+
+			<div id="main-menu" class="main-menu collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+<!-- 					<li class="active">
+						<a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+					</li> -->
+					<h3 class="menu-title">Header</h3>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>HOME</a>
+					</li>
+					<li class="menu-item-has-children dropdown">
+						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Client (New SQL)*</a>
+						<ul class="sub-menu children dropdown-menu">
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
+						</ul>
+					</li>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle todo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>To Do List*</a>
+					</li>
+					<li class="menu-item-has-children dropdown">
+						<a href="#" class="dropdown-toggle formlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Form List*</a>
+						<ul class="sub-menu children dropdown-menu">
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
+						</ul>
+					</li>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>E-Forms</a>
+					</li>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle reports" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Reports*</a>
+					</li>
+					<li class="menu-item-has-children dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Tickler</a>
+						<ul class="sub-menu children dropdown-menu">
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
+						</ul>
+					</li>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Unvalidated</a>
+					</li>
+					<li class="menu-item-has-children dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Resource</a>
+						<ul class="sub-menu children dropdown-menu">
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
+						</ul>
+					</li>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Messages</a>
+					</li>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Web Links</a>
+					</li>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>My Settings</a>
+					</li>								
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Search*</a>
+					</li>	
+					<li class="menu-item-has-children dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Administration</a>
+						<ul class="sub-menu children dropdown-menu">
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</aside>
+
+	<!-- Left Panel -->
+	<!-- Right Panel -->
+
+	<div id="right-panel" class="right-panel">
+
+		<!-- HEADER-->
+		<header id="header" class="header">
+			<div class="header-menu">
+				<div class="col-sm-7">
+					<a id="menuToggle" class="menutoggle pull-left"><i class="fa fa-chevron-circle-left"></i></a>
+					<div class="header-left">
+						<button class="search-trigger"><i class="fa fa-chevron-circle-right"></i></button>
+						<div class="form-inline">
+							<form class="search-form">
+								<input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+								<button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+							</form>
+						</div>
+						<!-- NOTIFICATIONS-->
+						<div class="dropdown for-notification">
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-bell"></i>
+								<span class="count bg-danger">5</span>
+							</button>
+							<div class="dropdown-menu" aria-labelledby="notification">
+								<p class="red">You have 3 Notification</p>
+								<a class="dropdown-item media bg-flat-color-1" href="#">
+								<i class="fa fa-check"></i>
+								<p>Lorem ipsum dolor sit amet, consectetur.</p>
+							</a>
+							<a class="dropdown-item media bg-flat-color-2" href="#">
+								<i class="fa fa-info"></i>
+								<p>Lorem ipsum dolor sit amet, consectetur.</p>
+							</a>
+							<a class="dropdown-item media bg-flat-color-1" href="#">
+								<i class="fa fa-warning"></i>
+								<p>Lorem ipsum dolor sit amet, consectetur.</p>
+							</a>
+							</div>
+						</div>
+						<!-- Header MESSAGES-->
+						<div class="dropdown for-message">
+							<button class="btn btn-secondary dropdown-toggle" type="button"
+								id="message"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="ti-email"></i>
+								<span class="count bg-primary">9</span>
+							</button>
+							<div class="dropdown-menu" aria-labelledby="message">
+								<p class="red">You have 4 Mails</p>
+								<a class="dropdown-item media bg-flat-color-1" href="#">
+								<span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
+								<span class="message media-body">
+								<span class="name float-left">TKTnameTKT</span>
+								<span class="time float-right">Just now</span>
+									<p>Lorem ipsum dolor sit amet, consectetur</p>
+								</span>
+							</a>
+							<a class="dropdown-item media bg-flat-color-2" href="#">
+								<span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
+								<span class="message media-body">
+									<span class="name float-left">TKTnameTKT</span>
+									<span class="time float-right">5 minutes ago</span>
+										<p>Lorem ipsum dolor sit amet, consectetur</p>
+								</span>
+							</a>
+							<a class="dropdown-item media bg-flat-color-1" href="#">
+								<span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
+								<span class="message media-body">
+									<span class="name float-left">TKTnameTKT</span>
+									<span class="time float-right">10 minutes ago</span>
+										<p>Lorem ipsum dolor sit amet, consectetur</p>
+								</span>
+							</a>
+							<a class="dropdown-item media bg-flat-color-2" href="#">
+								<span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
+								<span class="message media-body">
+									<span class="name float-left">TKTnameTKT</span>
+									<span class="time float-right">15 minutes ago</span>
+										<p>Lorem ipsum dolor sit amet, consectetur</p>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-5">
+					<div class="user-area dropdown float-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+						</a>
+						<div class="user-menu dropdown-menu">
+							<a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+							<a class="nav-link" href="#"><i class="fa fa-user"></i> Notifications <span class="count">13</span></a>
+							<a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+							<a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+						</div>
+					</div>
+					<div class="language-select dropdown" id="language-select">
+						<a class="dropdown-toggle" href="#" data-toggle="dropdown"  id="language" aria-haspopup="true" aria-expanded="true">
+							<i class="flag-icon flag-icon-us"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="language">
+							<div class="dropdown-item">
+								<span class="flag-icon flag-icon-fr"></span>
+							</div>
+							<div class="dropdown-item">
+								<i class="flag-icon flag-icon-es"></i>
+							</div>
+							<div class="dropdown-item">
+								<i class="flag-icon flag-icon-us"></i>
+							</div>
+							<div class="dropdown-item">
+								<i class="flag-icon flag-icon-it"></i>
+							</div>
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</header>
+		<!-- Header-->
 
-		<table border="0" cellpadding="0" style="border-collapse: collapse; width: 100%;">
-<!-- 			<tr align="left" style="height: 30px;">
-				<td colspan="2">
-					<table border="0" cellpadding="0" style="border-collapse: collapse; width: 100%; height: 100%">
-						<tr height="30px">
-							<td width="1%"></td>
-							<td align="left" width="79%">
-								LOGO IMAGE
-							</td>
-							<td width="17%" align="right">
-								POWERED-BY
-							</td>
-							<td width="3%"></td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			<tr align="left" style="height: 20px;">
-				<td colspan="2">
-					<table border="0" cellpadding="0" style="border-collapse: collapse; width: 100%; height: 100%">
-						<tr height="20px">
-							<td width="1%"></td>
-							<td align="left" width="69%">
-								ACCT / USER
-							  </font>
-							</td>
-							<td width="25%" align="right">
-								<font color="#006FC0">
-									PAGE TITLE
-								</font>
-							</td>
-							<td width="5%"></td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			<tr style="height: 2px">
-				<td colspan="2" style="background-color: #137AC5"></td>
-			</tr> -->
-			<tr id="maindiv" valign="top" align="center" style="height: 850px; width: 100%;">
-				<td valign="top" align="left" style="width: 10%; background-color: #EAF4FF">
-					<table border="0" cellpadding="0" style="border-collapse: collapse" width="100%">
-						<tr>
-							<td style="height: 30px;"></td>
-						</tr>
-						<tr>
-							<td>
-								<table class="table_menu" style="width: 100%; height: 100%">
-									<tr>
-										<td width="20px"></td>
-										<td style="vertical-align: top">
+		<div class="breadcrumbs">
+			<div class="col-sm-4">
+				<div class="page-header float-left">
+					<div class="page-title">
+						<h1>Home</h1>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<div class="page-header float-right">
+<!-- 					<div class="page-title">
+						<ol class="breadcrumb text-right">
+							<li class="active">Dashboard</li>
+						</ol>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		
+		<div class="content mt-3">
 
-											<asp:Menu ID="mainMenu" runat="server"
+		<!-- ALERT!! -->
+			<!--
+			<div class="col-sm-12">
+				<div class="alert  alert-success alert-dismissible fade show" role="alert">
+					<span class="badge badge-pill badge-success">PAGEalert
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+			</div>
+			-->
+
+			<!-- START content -->
+			<div class="content mt-3">
+				<div class="animated fadeIn">
+
+				<!-- [[ homepage content ]] -->
+				<iframe id="mainlist" src="webPartsMain.aspx" scrolling="yes" runat="server" style="width: 100%; height: auto; outline: 1px dotted red; "></iframe>
+
+				<!--  
+frameborder="1"
+ marginwidth="5" marginheight="2"
+
+
+				<div id="OnCallTrxDiv" style="overflow: auto;" runat="server">
+					<iframe src="WebList/webOnCallTrxList.aspx" style="width: 100%; height: 100%;" />
+				</div>
+
+				<div id="bg" runat="server"></div>
+
+				-->
+
+				</div>
+			</div>
+			<!-- END content -->
+
+		</div>
+	</div>
+	<!-- END Right Panel -->
+
+	<script src="js/per-sufee/vendors/jquery/dist/jquery.min.js"></script>
+	<script src="js/per-sufee/vendors/popper.js/dist/umd/popper.min.js"></script>
+	<script src="js/per-sufee/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- <script src="vendor/modernizr-2.6.2.min.js"></script> -->
+	<script src="js/per-sufee/main.js"></script>
+
+
+	<script src="js/per-sufee/vendors/chart.js/dist/Chart.bundle.min.js"></script>
+	<script src="js/per-sufee/dashboard.js"></script>
+	<script src="js/per-sufee/widgets.js"></script>
+	<script src="js/per-sufee/vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+	<script src="js/per-sufee/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+	<script src="js/per-sufee/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+	<script>
+		(function($) {
+			"use strict";
+
+			jQuery('#vmap').vectorMap({
+				map: 'world_en',
+				backgroundColor: null,
+				color: '#ffffff',
+				hoverOpacity: 0.7,
+				selectedColor: '#1de9b6',
+				enableZoom: true,
+				showTooltip: true,
+				values: sample_data,
+				scaleColors: ['#1de9b6', '#03a9f5'],
+				normalizeFunction: 'polynomial'
+			});
+
+			// temp.linkage
+			jQuery('a.home').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index.html";
+			});				
+			jQuery('a.client').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index-client.html";
+			});	
+			jQuery('a.formlist').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index-form-list.html";
+			});	
+			jQuery('a.reports').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index-reports.html";
+			});	
+			jQuery('a.search').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index-search.html";
+			});	
+			jQuery('a.todo').on('click', function(){
+				event.preventDefault();
+				window.location.href = "index-todo.html";
+			});	
+		})(jQuery);
+	</script>
+
+<!-- 
+
+<asp:Menu ID="mainMenu" runat="server"
 												StaticMenuItemStyle-CssClass="MenuItem"
 												StaticHoverStyle-CssClass="MenuItemHover"
 												StaticSelectedStyle-CssClass="MenuItemSelected"
@@ -188,28 +475,9 @@
 													</asp:MenuItem>
 												</Items>
 											</asp:Menu>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-				</td>
-				<td valign="top" align="center" style="width: 90%;">
-					<!--TONY FIX IFRAME FOR CROSS Browser style="height:calc(100% - 10px); width: 100%" -->
-					<iframe frameborder="1"  src="webPartsMain.aspx" marginwidth="5"
-						marginheight="2" scrolling="yes" id="mainlist" runat="server" ></iframe>
-				</td>
-			</tr>
-			<tr style="height: 20px">
-				<td colspan="2" bgcolor="#99CCFF" align="center">KeaSystems</td>
-			</tr>
-		</table>
-	</form>
-	<div id="bg" runat="server">
-	</div>
-	<div id="OnCallTrxDiv" style="overflow: auto;" runat="server">
-		<iframe src="WebList/webOnCallTrxList.aspx" style="width: 100%; height: 100%;" />
-	</div>
+ -->
+
+</form>
 </body>
+
 </html>
