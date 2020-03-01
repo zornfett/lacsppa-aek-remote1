@@ -1,5 +1,3 @@
-
-
 /* FROM WebMain.aspx */
 #bg {
 	display: block;
@@ -55,8 +53,6 @@ header .head-top .powered-by {
 	width: 202px;
 	height: auto; /* 25 */
 }
-
-
 
 header .head-bottom {
 	color: #006FC0;
@@ -138,13 +134,32 @@ header .head-bottom .page-title {
 	overflow: auto;*/
 }
 
-/* ADDITS TO PROTOTYPE STYLES */
+/* EDITS TO PROTOTYPE STYLES */
 #mainlist iframe {
 	position: relative;
 	width: 100%;
 	height: 100%;
 
 	outline: 1px dotted red;
+}
+
+a.dropdown-toggle.client {
+	font-weight: bold;
+}
+
+header .form-inline {
+	background-color: transparent !important;
+	height: inherit !important;
+}
+
+.form-inline .form-control {
+	width: 100% !important;
+}
+
+button.search-close {
+	position: absolute;
+    top: 1px;
+    right: 1px;
 }
 
 

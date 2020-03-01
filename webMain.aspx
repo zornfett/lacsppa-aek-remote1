@@ -13,23 +13,23 @@
 <head runat="server">
 
 	<title>::Kea Live:::.....</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/themify-icons.css">
-	<link rel="stylesheet" href="css/flag-icon.min.css">
-	<link rel="stylesheet" href="css/cs-skin-elastic.css">
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link rel="stylesheet" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/font-awesome.min.css">
+	<link rel="stylesheet" href="CSS/themify-icons.css">
+	<link rel="stylesheet" href="CSS/flag-icon.min.css">
+	<link rel="stylesheet" href="CSS/cs-skin-elastic.css">
 
 	<!-- <link href="css/style.css" type="text/css" rel="stylesheet" /> -->
-	<!-- <link rel="stylesheet" href="css/style-2020a.css"> -->
-	<link rel="stylesheet" href="css/per-sufee.css">
-	<link rel="stylesheet" href="css/prototype-styles.css">
+	<link rel="stylesheet" href="CSS/per-sufee.css">
+	<link rel="stylesheet" href="CSS/prototype-styles.css">
+	<link rel="stylesheet" href="CSS/style-2020a.css">
 
 	<link href="css/jqvmap.min.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
-	<!-- <link rel="apple-touch-icon" href="images/favicon.png">
-	<link rel="shortcut icon" href="images/favicon.png"> -->
+	<link rel="apple-touch-icon" href="Images/favicon.png">
+	<link rel="shortcut icon" href="Images/favicon.png">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
    <%-- <script>
@@ -54,12 +54,12 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fa fa-bars"></i>
 				</button>
-				<img class="logo" src="http://zornfett.com/client/appscal/layout-test/images/lanterman-logo.png" />
+				<img class="logo" src="Images/logos/lanterman-logo.png" />
 				<!-- <asp:Image id="titlelogo" runat="server" ImageUrl="img/logo/kea-live_text.jpg" Height="30px" Width="150px"></asp:Image> -->
-				<a class="navbar-brand hidden" href="./"><img src="http://zornfett.com/client/appscal/layout-test/images/lanterman-logo.png" alt="Logo"></a>
+				<!-- <a class="navbar-brand hidden" href="./"><img src="Images/logos/lanterman-logo.png" alt="Logo"></a> -->
 			</div>
 
-<!-- 			
+			<!-- 			
 			<div class="head-top">
 				<img class="powered-by" src="img/logo/pweredbykea.png" />
 				<!-- <asp:Image id="poweredby" runat="server" ImageUrl="img/logo/pweredbykea.png" Height="25px" Width="200px"></asp:Image>
@@ -72,79 +72,129 @@
 				<div class="page-title">
 					<asp:Label ID="pagetitle" runat="server" Font-Bold="true" Font-Size="Small" ForeColor="#660033" Text=""></asp:Label>
 				</div>
-			</div> -->
+			</div> 
+			-->
 
+			<!-- MAIN NAVIGATION -->
 			<div id="main-menu" class="main-menu collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-<!-- 					<li class="active">
-						<a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
-					</li> -->
-					<h3 class="menu-title">Header</h3>
+					<h3 class="menu-title">[navigation]</h3><!-- ILLEGAL / change to styled LI -->
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>HOME</a>
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>HOME</a>
 					</li>
 					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Client (New SQL)*</a>
+						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>CLIENT</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Profile</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Client Record Template</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Case Notes</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Medical</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Medicaid Waiver</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">POS List</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">SIF List</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Document List</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">IFSP List</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle todo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>To Do List*</a>
-					</li>
-					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle formlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Form List*</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
-						</ul>
-					</li>
-					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>E-Forms</a>
-					</li>
-					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle reports" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Reports*</a>
-					</li>
-					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Tickler</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
-						</ul>
-					</li>
-					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Unvalidated</a>
-					</li>
-					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Resource</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
-						</ul>
-					</li>
-					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Messages</a>
-					</li>
-					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Web Links</a>
-					</li>
-					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>My Settings</a>
-					</li>								
-					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Search*</a>
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>TO DO LIST</a>
 					</li>	
 					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-square"></i>Administration</a>
+						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>FORM LIST</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">sublink</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">ESR List</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Intake</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Psycho Social</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Eligibility</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Turning 3</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Lanterman</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Intake</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Psycho Social</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Eligibility</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Transfer</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Case Transfer</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Unit Case Transfer</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Statistics</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Time Card</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Exempt Time Card</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Non-Exempt Time Card</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Mileage</a></li>
 						</ul>
 					</li>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>IMAGING</a>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>E-FORMS</a>
+					</li>	
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>REPORT LIST</a>
+					</li>	
+					<li class="menu-item-has-children dropdown">
+						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>TICKLER</a>
+						<ul class="sub-menu children dropdown-menu">
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Client Tickler</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Vendor Tickler</a></li>
+						</ul>
+					</li>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>VALIDATE</a>
+					</li>	
+					<li class="menu-item-has-children dropdown">
+						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>RESOURCE</a>
+						<ul class="sub-menu children dropdown-menu">
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Profile</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">ID Notes</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Monitoring Tools/CAP</a></li>
+						</ul>
+					</li>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>MESSAGES</a>
+					</li>	
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>LINKS</a>
+					</li>	
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>MY SETTINGS</a>
+					</li>	
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>MY BILLING</a>
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>MY TICKLER</a>
+					</li>	
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>SEARCH</a>
+					</li>	
+					<li class="menu-item-no-children dropdown">
+						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>REPORT GENERATOR</a>
+					</li>
+					<li class="menu-item-has-children dropdown">
+						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--  <i class="menu-icon fa fa-square"> --></i>ADMINISTRATION</a>
+						<ul class="sub-menu children dropdown-menu">
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Users</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; User List</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; User Group</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Labels</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Account Settings</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Tools</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; CaseNote Type</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; CaseNote Template</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; CaseNote Addendum</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Forms Management</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Report Management</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Announcement</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">Tracking</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; User Login</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Event List</a></li>
+							<li><i class="fa fa-caret-right"></i><a href="ZZZZZZ">&mdash; Access List</a></li>
+						</ul>
+					</li>		
 				</ul>
 			</div>
 		</nav>
 	</aside>
-
 	<!-- Left Panel -->
-	<!-- Right Panel -->
 
+	<!-- Right Panel -->
 	<div id="right-panel" class="right-panel">
 
 		<!-- HEADER-->
@@ -153,14 +203,14 @@
 				<div class="col-sm-7">
 					<a id="menuToggle" class="menutoggle pull-left"><i class="fa fa-chevron-circle-left"></i></a>
 					<div class="header-left">
-						<button class="search-trigger"><i class="fa fa-chevron-circle-right"></i></button>
+						<button class="search-trigger"><i class="fa fa-search"></i></button><!-- change to SEARCH icon -->
 						<div class="form-inline">
 							<form class="search-form">
 								<input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
 								<button class="search-close" type="submit"><i class="fa fa-close"></i></button>
 							</form>
 						</div>
-						<!-- NOTIFICATIONS-->
+						<!-- 'BELL' NOTIFICATIONS
 						<div class="dropdown for-notification">
 							<button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-bell"></i>
@@ -182,7 +232,8 @@
 							</a>
 							</div>
 						</div>
-						<!-- Header MESSAGES-->
+						-->
+						<!-- MAIL NOTIFICATIONS
 						<div class="dropdown for-message">
 							<button class="btn btn-secondary dropdown-toggle" type="button"
 								id="message"
@@ -226,6 +277,7 @@
 								</a>
 							</div>
 						</div>
+						-->
 					</div>
 				</div>
 
@@ -270,7 +322,7 @@
 			<div class="col-sm-4">
 				<div class="page-header float-left">
 					<div class="page-title">
-						<h1>Home</h1>
+						<h1>PAGE TITLE</h1>
 					</div>
 				</div>
 			</div>
@@ -357,126 +409,15 @@ frameborder="1"
 				normalizeFunction: 'polynomial'
 			});
 
-			// temp.linkage
-			jQuery('a.home').on('click', function(){
-				event.preventDefault();
-				window.location.href = "index.html";
-			});				
-			jQuery('a.client').on('click', function(){
-				event.preventDefault();
-				window.location.href = "index-client.html";
-			});	
-			jQuery('a.formlist').on('click', function(){
-				event.preventDefault();
-				window.location.href = "index-form-list.html";
-			});	
-			jQuery('a.reports').on('click', function(){
-				event.preventDefault();
-				window.location.href = "index-reports.html";
-			});	
-			jQuery('a.search').on('click', function(){
-				event.preventDefault();
-				window.location.href = "index-search.html";
-			});	
-			jQuery('a.todo').on('click', function(){
-				event.preventDefault();
-				window.location.href = "index-todo.html";
-			});	
 		})(jQuery);
 	</script>
 
+
 <!-- 
+INACTIVE ASP SCHEIßE
 
-<asp:Menu ID="mainMenu" runat="server"
-												StaticMenuItemStyle-CssClass="MenuItem"
-												StaticHoverStyle-CssClass="MenuItemHover"
-												StaticSelectedStyle-CssClass="MenuItemSelected"
-												DynamicMenuItemStyle-CssClass="DynamicMenuItem"
-												DynamicHoverStyle-CssClass="MenuItemHover"
-												StaticSubMenuIndent="0"
-												StaticDisplayLevels="1" Width="100%" BackColor="#EAF4FF" DynamicMenuItemStyle-Width="180px" DynamicHoverStyle-Width="180px">
-												<Items>
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;HOME" NavigateUrl="javascript:Menu_Click(0);" ImageUrl="./img/home.ico"></asp:MenuItem>
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Client" NavigateUrl="javascript:Menu_Click(1);" ImageUrl="./img/clientlist.ico">
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Profile" NavigateUrl="javascript:Menu_Click(2);" ImageUrl="./img/profile.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Client Record Template " NavigateUrl="javascript:Menu_Click(55);" ImageUrl="./img/profile.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Case Notes" NavigateUrl="javascript:Menu_Click(3);" ImageUrl="./img/IDNotes.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Medical" NavigateUrl="javascript:Menu_Click(22);" ImageUrl="./img/medical.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Medicaid Waiver" NavigateUrl="javascript:Menu_Click(32);" ImageUrl="./img/IDNotes.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;POS List" NavigateUrl="javascript:Menu_Click(29);" ImageUrl="./img/IDNotes.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;SIR List" NavigateUrl="javascript:Menu_Click(30);" ImageUrl="./img/IDNotes.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Document List" NavigateUrl="javascript:Menu_Click(19);" ImageUrl="./img/Documents.png" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;IFSP List" NavigateUrl="javascript:Menu_Click(52);" ImageUrl="./img/Documents.png" />
-													</asp:MenuItem>
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;To Do List" NavigateUrl="javascript:Menu_Click(4);" ImageUrl="./img/tickler.ico" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Form List" NavigateUrl="javascript:Menu_Click(6);" ImageUrl="./img/forms.ico">
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;ESR" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/Documents.png">
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Intake" NavigateUrl="javascript:Menu_Click(34);" ImageUrl="./img/IDNotes.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Psycho Social" NavigateUrl="javascript:Menu_Click(40);" ImageUrl="./img/IDNotes.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Eligibility" NavigateUrl="javascript:Menu_Click(39);" ImageUrl="./img/IDNotes.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Turning 3" NavigateUrl="javascript:Menu_Click(54);" ImageUrl="./img/IDNotes.ico" />
-														</asp:MenuItem>
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Lanterman" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/Documents.png">
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Intake" NavigateUrl="javascript:Menu_Click(35);" ImageUrl="./img/IDNotes.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Psycho Social" NavigateUrl="javascript:Menu_Click(42);" ImageUrl="./img/IDNotes.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Eligibility" NavigateUrl="javascript:Menu_Click(41);" ImageUrl="./img/IDNotes.ico" />
-														</asp:MenuItem>
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Transfer" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/Documents.png">
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Case Transfer" NavigateUrl="javascript:Menu_Click(36);" ImageUrl="./img/IDNotes.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Unit Case Transfer" NavigateUrl="javascript:Menu_Click(43);" ImageUrl="./img/IDNotes.ico" />
-														</asp:MenuItem>
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Statistics" NavigateUrl="javascript:Menu_Click(37);" ImageUrl="./img/IDNotes.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Time Card" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/Documents.png">
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Exempt Time Card" NavigateUrl="javascript:Menu_Click(38);" ImageUrl="./img/IDNotes.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Non-Exempt Time Card" NavigateUrl="javascript:Menu_Click(44);" ImageUrl="./img/IDNotes.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Mileage" NavigateUrl="javascript:Menu_Click(49);" ImageUrl="./img/IDNotes.ico" />
-														</asp:MenuItem>
-													</asp:MenuItem>
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Imaging" NavigateUrl="javascript:Menu_Click(46);" ImageUrl="./img/tickler.ico" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;E-Forms" NavigateUrl="javascript:Menu_Click(45);" ImageUrl="./img/quicklinks2.ico" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Report List" NavigateUrl="javascript:Menu_Click(7);" ImageUrl="./img/reports.ico" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Tickler" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/admin.ico">
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Client Tickler" NavigateUrl="javascript:Menu_Click(25);" ImageUrl="./img/tickler.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Vendor Tickler" NavigateUrl="javascript:Menu_Click(50);" ImageUrl="./img/tickler.ico" />
-													</asp:MenuItem>
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Validate" NavigateUrl="javascript:Menu_Click(26);" ImageUrl="./img/IDNotes.ico" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Resource" NavigateUrl="javascript:Menu_Click(33);" ImageUrl="./img/clientlist.ico">
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Profile" NavigateUrl="javascript:Menu_Click(47);" ImageUrl="./img/profile.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;ID Notes" NavigateUrl="javascript:Menu_Click(48);" ImageUrl="./img/IDNotes.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Monitoring Tools/CAP" NavigateUrl="javascript:Menu_Click(53);" ImageUrl="./img/IDNotes.ico" />
-													</asp:MenuItem>
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Messages" NavigateUrl="javascript:Menu_Click(27);" ImageUrl="./img/message.jpg" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Web Links" NavigateUrl="javascript:Menu_Click(8);" ImageUrl="./img/quicklinks2.ico" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;My Settings" NavigateUrl="javascript:Menu_Click(9);" ImageUrl="./img/mysettings.ico" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;My Billing" NavigateUrl="javascript:Menu_Click(28);" ImageUrl="./img/IDNotes.ico" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;My Tickler" NavigateUrl="javascript:Menu_Click(31);" ImageUrl="./img/tickler.ico" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Search" NavigateUrl="javascript:Menu_Click(10);" ImageUrl="./img/search.ico" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Report Generator" NavigateUrl="javascript:Menu_Click(20);" ImageUrl="./img/search.ico" />
-													<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Administration" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/admin.ico">
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Users" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/users.ico">
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;User List" NavigateUrl="javascript:Menu_Click(5);" ImageUrl="./img/users.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;User Group" NavigateUrl="javascript:Menu_Click(11);" ImageUrl="./img/groups.ico" />
-														</asp:MenuItem>
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Labels" NavigateUrl="javascript:Menu_Click(12);" ImageUrl="./img/labels.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Account Settings" NavigateUrl="javascript:Menu_Click(13);" ImageUrl="./img/accountsettings.ico" />
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Tools" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/tools.ico">
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;CaseNote Type" NavigateUrl="javascript:Menu_Click(14);" ImageUrl="./img/notetypes.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;CaseNote Template" NavigateUrl="javascript:Menu_Click(15);" ImageUrl="./img/notetemplates.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;CaseNote Addendum" NavigateUrl="javascript:Menu_Click(23);" ImageUrl="./img/notetypes.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Forms Management" NavigateUrl="javascript:Menu_Click(16);" ImageUrl="./img/formsmanagement.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Report Management" NavigateUrl="javascript:Menu_Click(17);" ImageUrl="./img/reportsmanagement.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Announcement" NavigateUrl="javascript:Menu_Click(18);" ImageUrl="./img/announcements.ico" />
-														</asp:MenuItem>
-														<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Tracking" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/audit.png">
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;User Login" NavigateUrl="javascript:Menu_Click(24);" ImageUrl="./img/groups.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Event List" NavigateUrl="javascript:Menu_Click(21);" ImageUrl="./img/IDNotes.ico" />
-															<asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Access List" NavigateUrl="javascript:Menu_Click(51);" ImageUrl="./img/announcements.ico" />
-														</asp:MenuItem>
-													</asp:MenuItem>
-												</Items>
-											</asp:Menu>
+<asp:Menu ID="mainMenu" runat="server" StaticMenuItemStyle-CssClass="MenuItem" StaticHoverStyle-CssClass="MenuItemHover" StaticSelectedStyle-CssClass="MenuItemSelected" DynamicMenuItemStyle-CssClass="DynamicMenuItem" DynamicHoverStyle-CssClass="MenuItemHover" StaticSubMenuIndent="0" StaticDisplayLevels="1" Width="100%" BackColor="#EAF4FF" DynamicMenuItemStyle-Width="180px" DynamicHoverStyle-Width="180px"> <Items> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;HOME" NavigateUrl="javascript:Menu_Click(0);" ImageUrl="./img/home.ico"></asp:MenuItem> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Client" NavigateUrl="javascript:Menu_Click(1);" ImageUrl="./img/clientlist.ico"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Profile" NavigateUrl="javascript:Menu_Click(2);" ImageUrl="./img/profile.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Client Record Template " NavigateUrl="javascript:Menu_Click(55);" ImageUrl="./img/profile.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Case Notes" NavigateUrl="javascript:Menu_Click(3);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Medical" NavigateUrl="javascript:Menu_Click(22);" ImageUrl="./img/medical.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Medicaid Waiver" NavigateUrl="javascript:Menu_Click(32);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;POS List" NavigateUrl="javascript:Menu_Click(29);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;SIR List" NavigateUrl="javascript:Menu_Click(30);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Document List" NavigateUrl="javascript:Menu_Click(19);" ImageUrl="./img/Documents.png" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;IFSP List" NavigateUrl="javascript:Menu_Click(52);" ImageUrl="./img/Documents.png" /> </asp:MenuItem> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;To Do List" NavigateUrl="javascript:Menu_Click(4);" ImageUrl="./img/tickler.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Form List" NavigateUrl="javascript:Menu_Click(6);" ImageUrl="./img/forms.ico"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;ESR" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/Documents.png"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Intake" NavigateUrl="javascript:Menu_Click(34);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Psycho Social" NavigateUrl="javascript:Menu_Click(40);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Eligibility" NavigateUrl="javascript:Menu_Click(39);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Turning 3" NavigateUrl="javascript:Menu_Click(54);" ImageUrl="./img/IDNotes.ico" /> </asp:MenuItem> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Lanterman" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/Documents.png"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Intake" NavigateUrl="javascript:Menu_Click(35);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Psycho Social" NavigateUrl="javascript:Menu_Click(42);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Eligibility" NavigateUrl="javascript:Menu_Click(41);" ImageUrl="./img/IDNotes.ico" /> </asp:MenuItem> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Transfer" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/Documents.png"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Case Transfer" NavigateUrl="javascript:Menu_Click(36);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Unit Case Transfer" NavigateUrl="javascript:Menu_Click(43);" ImageUrl="./img/IDNotes.ico" /> </asp:MenuItem> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Statistics" NavigateUrl="javascript:Menu_Click(37);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Time Card" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/Documents.png"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Exempt Time Card" NavigateUrl="javascript:Menu_Click(38);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Non-Exempt Time Card" NavigateUrl="javascript:Menu_Click(44);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Mileage" NavigateUrl="javascript:Menu_Click(49);" ImageUrl="./img/IDNotes.ico" /> </asp:MenuItem> </asp:MenuItem> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Imaging" NavigateUrl="javascript:Menu_Click(46);" ImageUrl="./img/tickler.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;E-Forms" NavigateUrl="javascript:Menu_Click(45);" ImageUrl="./img/quicklinks2.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Report List" NavigateUrl="javascript:Menu_Click(7);" ImageUrl="./img/reports.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Tickler" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/admin.ico"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Client Tickler" NavigateUrl="javascript:Menu_Click(25);" ImageUrl="./img/tickler.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Vendor Tickler" NavigateUrl="javascript:Menu_Click(50);" ImageUrl="./img/tickler.ico" /> </asp:MenuItem> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Validate" NavigateUrl="javascript:Menu_Click(26);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Resource" NavigateUrl="javascript:Menu_Click(33);" ImageUrl="./img/clientlist.ico"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Profile" NavigateUrl="javascript:Menu_Click(47);" ImageUrl="./img/profile.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;ID Notes" NavigateUrl="javascript:Menu_Click(48);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Monitoring Tools/CAP" NavigateUrl="javascript:Menu_Click(53);" ImageUrl="./img/IDNotes.ico" /> </asp:MenuItem> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Messages" NavigateUrl="javascript:Menu_Click(27);" ImageUrl="./img/message.jpg" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Web Links" NavigateUrl="javascript:Menu_Click(8);" ImageUrl="./img/quicklinks2.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;My Settings" NavigateUrl="javascript:Menu_Click(9);" ImageUrl="./img/mysettings.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;My Billing" NavigateUrl="javascript:Menu_Click(28);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;My Tickler" NavigateUrl="javascript:Menu_Click(31);" ImageUrl="./img/tickler.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Search" NavigateUrl="javascript:Menu_Click(10);" ImageUrl="./img/search.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Report Generator" NavigateUrl="javascript:Menu_Click(20);" ImageUrl="./img/search.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Administration" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/admin.ico"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Users" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/users.ico"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;User List" NavigateUrl="javascript:Menu_Click(5);" ImageUrl="./img/users.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;User Group" NavigateUrl="javascript:Menu_Click(11);" ImageUrl="./img/groups.ico" /> </asp:MenuItem> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Labels" NavigateUrl="javascript:Menu_Click(12);" ImageUrl="./img/labels.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Account Settings" NavigateUrl="javascript:Menu_Click(13);" ImageUrl="./img/accountsettings.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Tools" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/tools.ico"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;CaseNote Type" NavigateUrl="javascript:Menu_Click(14);" ImageUrl="./img/notetypes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;CaseNote Template" NavigateUrl="javascript:Menu_Click(15);" ImageUrl="./img/notetemplates.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;CaseNote Addendum" NavigateUrl="javascript:Menu_Click(23);" ImageUrl="./img/notetypes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Forms Management" NavigateUrl="javascript:Menu_Click(16);" ImageUrl="./img/formsmanagement.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Report Management" NavigateUrl="javascript:Menu_Click(17);" ImageUrl="./img/reportsmanagement.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Announcement" NavigateUrl="javascript:Menu_Click(18);" ImageUrl="./img/announcements.ico" /> </asp:MenuItem> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Tracking" NavigateUrl="javascript:Menu_Click(-1);" ImageUrl="./img/audit.png"> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;User Login" NavigateUrl="javascript:Menu_Click(24);" ImageUrl="./img/groups.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Event List" NavigateUrl="javascript:Menu_Click(21);" ImageUrl="./img/IDNotes.ico" /> <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;Access List" NavigateUrl="javascript:Menu_Click(51);" ImageUrl="./img/announcements.ico" /> </asp:MenuItem> </asp:MenuItem> </Items> </asp:Menu>
  -->
-
 </form>
 </body>
 
