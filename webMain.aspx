@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="webMain.aspx.cs" Inherits="Virweb2.webMain" %>
 
+<%@ Register Src="CustomerControl/DisplayModeMenu.ascx" TagName="DisplayModeMenu" TagPrefix="uc2" %>
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -336,6 +338,29 @@
 				</div>
 			</div>
 		</div>
+			<div class="topnav-controls">
+				<div class="SHL-controls">
+					<ul>
+						<li>
+							<input type="image" id="btnSupport" runat="server" alt="Support" style="width: 25px;height:25px"  
+							src="./img/supportdesk.ico" title="Support"
+							onclick="javascript:window.top.outsidelinks(1);return false;" />
+						</li>
+						<li>
+							<input type="image" id="btnHelp" runat="server" alt="Help" style="width: 25px;height:25px"  
+							src="./img/help.ico" title="Help"
+							onclick="javascript:window.top.outsidelinks(2);return false;" /> 
+						</li>
+						<li>
+							<input type="image" id="btnLogout" runat="server" alt="Logout" style="width: 50px;height:25px"  
+							src="./img/logout.jpg" title="Logout"
+							onclick="window.top.document.location.replace('./webLogout.aspx');return false;" />
+						</li>
+					</ul>
+				</div>
+				<!-- RAM controls -->
+				<uc2:DisplayModeMenu ID="DisplayModeMenu1" runat="server" />
+			</div>
 		
 		<div class="content mt-3">
 
@@ -356,7 +381,7 @@
 				<div class="animated fadeIn">
 
 				<!-- [[ homepage content ]] -->
-				<iframe id="mainlist" src="webPartsMain.aspx" scrolling="yes" runat="server" style="width: 100%; height: auto; outline: 1px dotted red; "></iframe>
+				<!-- <iframe id="mainlist" src="webPartsMain.aspx" scrolling="yes" runat="server" style="width: 100%; height: auto; outline: 1px dotted red; "></iframe> -->
 
 				<!--  
 frameborder="1"

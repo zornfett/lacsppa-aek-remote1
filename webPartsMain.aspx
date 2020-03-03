@@ -33,9 +33,25 @@
 <html>
 <head runat="server">
 	<title></title>
-	<link href="css/style.css" type="text/css" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style-2020a.css">
-	<link rel="stylesheet" href="css/prototype-styles.css">
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link rel="stylesheet" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/font-awesome.min.css">
+	<link rel="stylesheet" href="CSS/themify-icons.css">
+	<link rel="stylesheet" href="CSS/flag-icon.min.css">
+	<link rel="stylesheet" href="CSS/cs-skin-elastic.css">
+
+	<!-- <link href="css/style.css" type="text/css" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="CSS/per-sufee.css">
+	<link rel="stylesheet" href="CSS/prototype-styles.css">
+	<link rel="stylesheet" href="CSS/style-2020a.css">
+
+	<link href="css/jqvmap.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+	<link rel="apple-touch-icon" href="Images/favicon.png">
+	<link rel="shortcut icon" href="Images/favicon.png">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
 	<script type="text/JavaScript" src="js/common.js"></script>  
 	<script type="text/javascript" language="javascript">
@@ -105,90 +121,92 @@
 		<!-- RAM controls -->
 		<uc2:DisplayModeMenu ID="DisplayModeMenu1" runat="server" />
 	</div>
-	
-<!-- 	<div align="left" style="WIDTH:100%; ">
-	<table border="0" cellpadding="0" style="BORDER-COLLAPSE: collapse" width="100%" >
-	  <tr valign="middle" style="height:30px; background-color: #EAF4FF">
-		<td align="left" valign="middle" width="25%">
-			&nbsp;
-		</td>
-		<td align="right" width="60%">
-			  
-		</td>
-		<td align="left" width="15%">
-			             
-			&nbsp;
-			            
-			&nbsp;
-			             
-			&nbsp;
-		</td>
-	  </tr>
-	  <tr style="height:2px">
-		<td colspan="3" style="background-color:#137AC5"></td> 
-	  </tr>
-	</table>
-	</div> -->
-	<div id="maindiv">
-	<table class="table_maindiv">
-	 <tr>
-	 <td valign="top"> 
-	  <table border="0" cellpadding="0">
-		<tr>
-			<td>
-				 <asp:CatalogZone ID="CatalogZone1" runat="server" PartChromePadding="0px" 
-					 PartStyle-HorizontalAlign="Left" 
-					 Width="250px" height="100%" HeaderText=""  EnableTheming="True" 
-					 SelectTargetZoneText="" Padding="10" >
+
+	<div class="content mt-3">
+		<div class="animated fadeIn">
+			<div class="row">
+				
+				 <asp:CatalogZone ID="CatalogZone1" runat="server"  HeaderText=""  EnableTheming="True" SelectTargetZoneText="">
 					<ZoneTemplate>
-						<asp:DeclarativeCatalogPart ID="DeclarativeCatalogPart1" runat="server" 
-							ChromeType="TitleOnly" Title="Web Parts Catalog" >
+						<asp:DeclarativeCatalogPart ID="DeclarativeCatalogPart1" runat="server" ChromeType="TitleOnly" Title="Web Parts Catalog" >
 							 <WebPartsTemplate>  
-								 <uc1:CtrlConsumerList ID="CtrlConsumerList1" runat="server" title="CLIENT LIST" TitleIconImageUrl="./img/clientlist.ico" />
-								 <uc10:CtrlConsumerProfile ID="CtrlConsumerProfile1" runat="server" Title="CLIENT PROFILE" TitleIconImageUrl="./img/profile.ico" />
-								 <uc3:CtrlIDNotesList ID="CtrlIDNotesList1" runat="server" title="ID NOTES LIST" TitleIconImageUrl="./img/IDNotes.ico" />
+								 <uc1:CtrlConsumerList ID="CtrlConsumerList1" runat="server" title="CLIENT LIST" TitleIconImageUrl="./img/old-icons/clientlist.ico" />
+								 <uc10:CtrlConsumerProfile ID="CtrlConsumerProfile1" runat="server" Title="CLIENT PROFILE" TitleIconImageUrl="./img/old-icons/profile.ico" />
+								 <uc3:CtrlIDNotesList ID="CtrlIDNotesList1" runat="server" title="ID NOTES LIST" TitleIconImageUrl="./img/old-icons/IDNotes.ico" />
 								 <uc4:SearchUserControl ID="SearchUserControl1" runat="server" Title="SEARCH" TitleIconImageUrl="" />
 								 
-								 <uc22:CtrlResourceList ID="CtrlResourceList1" runat="server" Title="VENDOR LIST" TitleIconImageUrl="./img/clientlist.ico" />
-								 <uc23:CtrlResourceProfile ID="CtrlResourceProfile1" runat="server" Title="VENDOR PROFILE" TitleIconImageUrl="./img/profile.ico" />
-								 <uc21:SearchResource ID="SearchResource1" runat="server" Title="SEARCH VENDOR" TitleIconImageUrl="./img/reports.ico" />   
-								 <uc24:CtrlMonitoringToolReports ID="CtrlMonitoringToolReports1" runat="server" Title="MONITORING TOOL" TitleIconImageUrl="./img/reports.ico" />
-								 <uc25:CtrFinancial ID="CtrFinancial1" runat="server" Title="FINANCIAL" TitleIconImageUrl="./img/reports.ico" />
-								 <uc26:CtrlConsultants ID="CtrlConsultants1" runat="server" Title="CONSULTANTS" TitleIconImageUrl="./img/reports.ico" /> 
+								 <uc22:CtrlResourceList ID="CtrlResourceList1" runat="server" Title="VENDOR LIST" TitleIconImageUrl="./img/old-icons/clientlist.ico" />
+								 <uc23:CtrlResourceProfile ID="CtrlResourceProfile1" runat="server" Title="VENDOR PROFILE" TitleIconImageUrl="./img/old-icons/profile.ico" />
+								 <uc21:SearchResource ID="SearchResource1" runat="server" Title="SEARCH VENDOR" TitleIconImageUrl="./img/old-icons/reports.ico" />   
+								 <uc24:CtrlMonitoringToolReports ID="CtrlMonitoringToolReports1" runat="server" Title="MONITORING TOOL" TitleIconImageUrl="./img/old-icons/reports.ico" />
+								 <uc25:CtrFinancial ID="CtrFinancial1" runat="server" Title="FINANCIAL" TitleIconImageUrl="./img/old-icons/reports.ico" />
+								 <uc26:CtrlConsultants ID="CtrlConsultants1" runat="server" Title="CONSULTANTS" TitleIconImageUrl="./img/old-icons/reports.ico" /> 
 																   
-								 <uc6:CtrlForms ID="CtrlForms1" runat="server" Title="FORM LIST" TitleIconImageUrl="./img/forms.ico" />
-								 <uc7:CtrlReports ID="CtrlReports1" runat="server" Title="REPORT LIST" TitleIconImageUrl="./img/reports.ico" />                         
-								 <uc9:CtrlClewMessage ID="CtrlClewMessage1" runat="server" Title="TO DO LIST" TitleIconImageUrl="./img/tickler.ico" />
-								 <uc13:CtrlOperLog ID="CtrlOperLog1" runat="server" Title="LAST ACCESS LIST" TitleIconImageUrl="./img/previous.ico" />
-								 <uc11:CtrlLinkList ID="CtrlLinkList1" runat="server" Title="WEB LINKS" TitleIconImageUrl="./img/quicklinks2.ico" />
+								 <uc6:CtrlForms ID="CtrlForms1" runat="server" Title="FORM LIST" TitleIconImageUrl="./img/old-icons/forms.ico" />
+								 <uc7:CtrlReports ID="CtrlReports1" runat="server" Title="REPORT LIST" TitleIconImageUrl="./img/old-icons/reports.ico" />                         
+								 <uc9:CtrlClewMessage ID="CtrlClewMessage1" runat="server" Title="TO DO LIST" TitleIconImageUrl="./img/old-icons/tickler.ico" />
+								 <uc13:CtrlOperLog ID="CtrlOperLog1" runat="server" Title="LAST ACCESS LIST" TitleIconImageUrl="./img/old-icons/previous.ico" />
+								 <uc11:CtrlLinkList ID="CtrlLinkList1" runat="server" Title="WEB LINKS" TitleIconImageUrl="./img/old-icons/quicklinks2.ico" />
 								 
-								 <uc12:CtrlUserSet ID="CtrlUserSet1" runat="server" Title="MY SETTINGS" TitleIconImageUrl="./img/mysettings.ico" /> 
-								 <uc17:CtrlEsrTrfList ID="CtrlEsrTrfList1" runat="server" Title="PRRS TRANSFER" TitleIconImageUrl="./img/tickler.ico" />
-								 <uc18:SearchFullText ID="SearchFullText1" runat="server" Title="SEARCH FULL TEXT" TitleIconImageUrl="./img/reports.ico" />           
-								 <uc19:CtrlConsumerMenu ID="CtrlConsumerMenu1" runat="server" Title="CLIENT MENU" TitleIconImageUrl="./img/IDNotes.ico" />           
-								 <uc20:CtrlFormMenu ID="CtrlFormMenu1" runat="server" Title="FORM MENU" TitleIconImageUrl="./img/forms.ico" /> 
-								 <uc27:CtrlCSDMenu ID="CtrlCSDMenu1" runat="server" Title="CSD MENU" TitleIconImageUrl="./img/reports.ico" />          
+								 <uc12:CtrlUserSet ID="CtrlUserSet1" runat="server" Title="MY SETTINGS" TitleIconImageUrl="./img/old-icons/mysettings.ico" /> 
+								 <uc17:CtrlEsrTrfList ID="CtrlEsrTrfList1" runat="server" Title="PRRS TRANSFER" TitleIconImageUrl="./img/old-icons/tickler.ico" />
+								 <uc18:SearchFullText ID="SearchFullText1" runat="server" Title="SEARCH FULL TEXT" TitleIconImageUrl="./img/old-icons/reports.ico" />           
+								 <uc19:CtrlConsumerMenu ID="CtrlConsumerMenu1" runat="server" Title="CLIENT MENU" TitleIconImageUrl="./img/old-icons/IDNotes.ico" />           
+								 <uc20:CtrlFormMenu ID="CtrlFormMenu1" runat="server" Title="FORM MENU" TitleIconImageUrl="./img/old-icons/forms.ico" /> 
+								 <uc27:CtrlCSDMenu ID="CtrlCSDMenu1" runat="server" Title="CSD MENU" TitleIconImageUrl="./img/old-icons/reports.ico" />          
 							 </WebPartsTemplate>
 						</asp:DeclarativeCatalogPart>
 					</ZoneTemplate>
 					<HeaderCloseVerb Text=" " />
-					<PartStyle HorizontalAlign="Left" BackColor="#DDDDFF" Font-Bold="True" 
-						 BorderStyle="Double"></PartStyle>
-					<PartTitleStyle BackColor="#99CCFF" BorderStyle="Solid" Font-Bold="True" 
-						 Font-Size="10pt" Height="35px" />
-				</asp:CatalogZone>
-			</td>
-		</tr>
-	  </table>
-	 </td>
-	 <td>
-	  <table border="0" cellpadding="0" width="100%">
-		<tr>
-			<td class="outline-purple" valign="top" style="width:33%;">
-				<asp:WebPartZone ID="WebPartZone1" runat="server" HeaderText=" " 
-					Font-Names="Verdana" Width="95%"
-					BorderStyle="None"
-					WebPartVerbRenderMode="TitleBar">
+ 				</asp:CatalogZone>
+
+			</div>
+		</div><!-- .animated -->
+	</div><!-- .content -->
+
+	<div class="content mt-3">
+		<div class="animated fadeIn">
+			<div class="row">
+
+				<asp:WebPartZone ID="WebPartZone1" runat="server" >
+
+				</asp:WebPartZone>
+
+			</div>
+		</div><!-- .animated -->
+	</div><!-- .content -->
+
+	<div class="content mt-3">
+		<div class="animated fadeIn">
+			<div class="row">
+
+				<asp:WebPartZone ID="WebPartZone2" runat="server">
+
+				</asp:WebPartZone>
+
+			</div>
+		</div><!-- .animated -->
+	</div><!-- .content -->
+
+	<div class="content mt-3">
+		<div class="animated fadeIn">
+			<div class="row">
+
+				 <asp:WebPartZone ID="WebPartZone3" runat="server" >
+
+				</asp:WebPartZone>
+
+			</div>
+		</div><!-- .animated -->
+	</div><!-- .content -->
+
+	</form>
+</body>
+</html>
+
+
+<!-- ASP COMPONENT DUMP
+
 					<ZoneTemplate>
 					</ZoneTemplate>
 					<CloseVerb Visible="False" ImageUrl="~/img/close.png" />
@@ -210,13 +228,10 @@
 					<PartStyle CssClass="PartStyle" />
 					<PartTitleStyle CssClass="PartTitleStyle" Height="20px" 
 						HorizontalAlign="Left" />
-				</asp:WebPartZone>
-			</td>
-			<td class="outline-red" valign="top" style="width:33%;">
-				<asp:WebPartZone ID="WebPartZone2" runat="server" HeaderText=" " BorderColor="#CCCCCC"
-					Font-Names="Verdana" Padding="1" Style="margin-bottom: 2px" Width="95%" 
-					BorderStyle="None" PartChromePadding="0px"
-					WebPartVerbRenderMode="TitleBar">
+
+:::::
+
+
 					<ZoneTemplate>
 					</ZoneTemplate>
 					<CloseVerb Visible="False" ImageUrl="~/img/close.png" />
@@ -238,13 +253,9 @@
 					<PartStyle CssClass="PartStyle" />
 					<PartTitleStyle CssClass="PartTitleStyle" Height="20px" 
 						HorizontalAlign="Left" />
-				</asp:WebPartZone>
-			</td>        
-			<td class="outline-orange" valign="top" style="width:33%;">
-				 <asp:WebPartZone ID="WebPartZone3" runat="server" HeaderText=" " BorderColor="#CCCCCC"
-					Font-Names="Verdana" Padding="1" Style="margin-bottom: 2px" Width="95%" 
-					BorderStyle="None" PartChromePadding="0px"
-					WebPartVerbRenderMode="TitleBar">
+
+:::::
+
 					<ZoneTemplate>
 					</ZoneTemplate>
 					<CloseVerb Visible="False" ImageUrl="~/img/close.png" />
@@ -265,14 +276,5 @@
 					<PartChromeStyle BorderColor="White" />
 					<PartStyle CssClass="PartStyle" />
 					<PartTitleStyle CssClass="PartTitleStyle" Height="20px" HorizontalAlign="Left" />
-				</asp:WebPartZone>
-			</td>  
-		</tr>
-	   </table>
-	 </td>
-	 </tr>         
-	</table>
-	</div>
-	</form>
-</body>
-</html>
+
+ -->

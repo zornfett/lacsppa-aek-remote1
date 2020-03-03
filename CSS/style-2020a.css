@@ -74,7 +74,7 @@ header .head-bottom .page-title {
 
 .topnav-controls {
 	position: relative;
-	background-color: #EAF4FF; 
+	background-color: #b7d4e2; 
 	width: 100%;
 	height: 3em;
 }
@@ -82,7 +82,7 @@ header .head-bottom .page-title {
 .RAM-controls {
 	/*float: right;*/
 	position: absolute;
-	top: -2px;
+	top: 14px;
     right: 195px;
 	color: #00f;
 	font-size: 13px;
@@ -107,7 +107,7 @@ header .head-bottom .page-title {
 .SHL-controls {
 	/*float: right;*/
 	position: absolute;
-    top: -9px;
+    top: 11px;
     right: 37px;
 	color: #00f;
 	font-size: 13px;
@@ -135,13 +135,13 @@ header .head-bottom .page-title {
 }
 
 /* EDITS TO PROTOTYPE STYLES */
-#mainlist iframe {
+
+/*#mainlist iframe {
 	position: relative;
 	width: 100%;
 	height: 100%;
-
 	outline: 1px dotted red;
-}
+}*/
 
 a.dropdown-toggle.client {
 	font-weight: bold;
@@ -201,6 +201,10 @@ button.search-close {
 }
 
 /*
+div {
+	outline: 2px dotted green !important;
+}
+
 @media (max-width: 1368px) { div { outline: 2px dotted blue; } }
 @media (max-width: 1024px) { div { outline: 2px dotted green; } }
 @media (max-width: 992px) { div { outline: 2px dotted orange; } }
