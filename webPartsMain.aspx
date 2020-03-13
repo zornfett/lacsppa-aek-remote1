@@ -98,6 +98,7 @@
 		</StaticConnections>
 	</asp:WebPartManager>
 
+	<!-- HEADER NAV -->
 	<div class="topnav-controls">
 		<div class="SHL-controls">
 			<ul>

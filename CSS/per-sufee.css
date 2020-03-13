@@ -1540,20 +1540,20 @@ textarea {
 
 
 aside.left-panel {
-  background: #272c33;
+  /*background: #272c33; RBB*/
   display: table-cell;
   height: 100vh;
   min-height: 100%;
   padding: 0 25px;
   vertical-align: top;
-  width: 280px;
+  width: 20%; /* 280px RBB*/
   -webkit-transition:width 0.3s ease;
   transition: width 0.3s ease;
 }
 
 
 .navbar {
-  background: #272c33;
+  /*background: #272c33; RBB*/
   border-radius: 0;
   border: none;
   display: block;
@@ -1750,7 +1750,7 @@ aside.left-panel {
 }
 
 
-/* RBBed
+/* RBB edit
 .navbar .navbar-nav > .active > a,
 .navbar .navbar-nav > .active > a:focus,
 .navbar .navbar-nav > .active > a:hover {
@@ -1913,7 +1913,7 @@ body.open .navbar .navbar-brand.hidden {
 /* Right panel */
 .right-panel {
 	display: table-cell;
-	width: 100%; /* RBB edit */
+	width: inherit; /* 100% RBB */
 	padding-left: 0 !important;
 	-webkit-transition: all 0.35s ease;
 	transition: all 0.35s ease;
@@ -1984,7 +1984,7 @@ header.fixed-top {
 
 
 .menutoggle {
-  background: #e74c3c;
+  /*background: #e74c3c;*/
   border-radius: 50%;
   color: #fff !important;
   cursor: pointer;

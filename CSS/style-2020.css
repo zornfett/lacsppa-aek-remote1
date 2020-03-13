@@ -1,34 +1,88 @@
-/* FROM WebMain.aspx */
-#bg {
-	display: block;
-	position: absolute;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	height: 100%;
-	background-color: black;
-	z-index: 1001;
-	-moz-opacity: 0.7;
-	opacity: 0.7;
-	filter: alpha(opacity=70);
+/* STYLES FROM PROTOTYPE */
+#left-panel {
+	background-color: #b7d4e2; /* light-blue */
+}
+.open aside.left-panel {
+    max-width: 85px;
+    width: 85px;
+}
+.navbar .navbar-brand img {
+	max-width: 190px;
+}
+nav.navbar,
+.navbar .navbar-nav li.menu-item-has-children .sub-menu {
+	background-color: #b7d4e2;
+}
+.navbar .navbar-nav li > a {
+	padding: 10px 0 0 0;
+}
+.navbar .navbar-nav li.menu-item-has-children .sub-menu {
+	padding: 0 0 0 56px;
+}
+.navbar .navbar-nav li.menu-item-has-children a:before {
+	color: #00274e !important; /* Lanterman text blue */
+}
+nav.navbar,
+.navbar .menu-title,
+.navbar .navbar-nav li > a,
+.navbar .navbar-nav li > a .menu-icon,
+#main-menu .navbar-nav li > a .menu-icon,
+.navbar .navbar-nav li.menu-item-has-children .sub-menu i,
+/* hovers */
+.navbar .navbar-nav li > a:hover,
+.navbar .navbar-nav li > a:hover .menu-icon,
+#main-menu .navbar-nav li > a:hover .menu-icon {
+	color: #00274e !important;
+}
+/* ?!?
+	{
+	color: #999 !important;
+	}
+*/
+
+.menutoggle {
+	background-color: #fdc54e; /* Lanterman yellow */
+	color: #000 !important;
+	font-size: 1.9em !important;
+}
+.open .menutoggle i:before {
+	content: "\f138" !important;
 }
 
-#OnCallTrxDiv {
-	display: block;
-	position: absolute;
-	top: 10%;
-	left: 10%;
-	width: 80%;
-	height: 80%;
-	padding: 8px;
-	border: 8px solid #E8E9F7;
-	background-color: white;
-	z-index: 1002;
-	overflow: auto;
+#home a.home { font-weight: bold; }
+#client a.client { font-weight: bold; }
+#formlist a.formlist { font-weight: bold; }
+#reports a.reports { font-weight: bold; }
+#search a.search { font-weight: bold; }
+#todo a.todo { font-weight: bold; }
+
+#header .count {
+	background-color: #fdc54e !important;
+	color: #000 !important;
+}
+.bg-flat-color-1 {
+	color: #00274e !important;
+}
+.bg-flat-color-2 {
+	background-color: #fdc54e !important;
+}
+a:hover.bg-flat-color-2 {
+	background-color: #f8f9fa !important;
 }
 
+/* CONTENT body styles
+h1 {
+	text-transform: uppercase;
+}
+.navbar .navbar-nav li .fa-square:before {
+	content: none !important;
+}
+#formlist .help-block {
+	font-size: 14px;
+}
+*/
 
-/* FEB25 STYLES */
+/* NEW [FEB25 et al] STYLES */
 header {
 	padding: .5em;
 }
@@ -68,8 +122,6 @@ header .head-bottom .page-title {
 	float: right;
 	color: #660033;
 	font-weight: bold;
-
-	/*outline: 2px dotted red;*/
 }
 
 .topnav-controls {
@@ -128,20 +180,8 @@ header .head-bottom .page-title {
 }
 
 #maindiv {
-/*	position: relative;
-	width: 100%;
-	height: 850px; AUTO
-	overflow: auto;*/
+
 }
-
-/* EDITS TO PROTOTYPE STYLES */
-
-/*#mainlist iframe {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	outline: 1px dotted red;
-}*/
 
 a.dropdown-toggle.client {
 	font-weight: bold;
@@ -160,6 +200,35 @@ button.search-close {
 	position: absolute;
     top: 1px;
     right: 1px;
+}
+
+/* PREV STYLES from WebMain.aspx? */
+#bg {
+	display: block;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+#OnCallTrxDiv {
+	display: block;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	padding: 8px;
+	border: 8px solid #E8E9F7;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
 }
 
 
@@ -186,7 +255,8 @@ button.search-close {
 }
 
 /* DUMMY STYLES */
-#OnCallTrxDiv {
+/*#OnCallTrxDiv*/
+#insert-view-content-here {
 	outline: 2px dotted blue;
 }
 
@@ -199,6 +269,8 @@ button.search-close {
 .outline-orange {
 	outline: 2px dotted orange;
 }
+
+
 
 /*
 div {
