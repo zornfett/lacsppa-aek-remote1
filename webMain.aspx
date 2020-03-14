@@ -214,7 +214,7 @@
 							<div class="dropdown-menu" aria-labelledby="message">
 								<p class="red">You have 4 Mails</p>
 								<a class="dropdown-item media bg-flat-color-1" href="#">
-								<span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
+								<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
 								<span class="message media-body">
 								<span class="name float-left">TKTnameTKT</span>
 								<span class="time float-right">Just now</span>
@@ -222,7 +222,7 @@
 								</span>
 							</a>
 							<a class="dropdown-item media bg-flat-color-2" href="#">
-								<span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
+								<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
 								<span class="message media-body">
 									<span class="name float-left">TKTnameTKT</span>
 									<span class="time float-right">5 minutes ago</span>
@@ -230,7 +230,7 @@
 								</span>
 							</a>
 							<a class="dropdown-item media bg-flat-color-1" href="#">
-								<span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
+								<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
 								<span class="message media-body">
 									<span class="name float-left">TKTnameTKT</span>
 									<span class="time float-right">10 minutes ago</span>
@@ -238,7 +238,7 @@
 								</span>
 							</a>
 							<a class="dropdown-item media bg-flat-color-2" href="#">
-								<span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
+								<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
 								<span class="message media-body">
 									<span class="name float-left">TKTnameTKT</span>
 									<span class="time float-right">15 minutes ago</span>
@@ -251,9 +251,9 @@
 				</div>
 				<div class="col-sm-5">
 					<div class="user-area dropdown float-right">
-<!-- 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
-						</a> -->
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img class="user-avatar rounded-circle" src="img/dummy-avatar.jpg" alt="[userName]">
+						</a>
 						<div class="user-menu dropdown-menu">
 							<a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
 							<a class="nav-link" href="#"><i class="fa fa-user"></i> Notifications <span class="count">13</span></a>
@@ -327,6 +327,7 @@
 	<!-- END RIGHT-PANEL -->
 
 	<script src="js/jquery.min.js"></script>
+	<script src="js/per-sufee/popper.min.js"></script>
 	<script src="js/scripts-2020.js"></script>
 	<!-- OLD JQUERY / SUFEE REQUIRES 2.1.4 ABOVE - DISCARD!!
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
