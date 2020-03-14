@@ -202,6 +202,14 @@ button.search-close {
     right: 1px;
 }
 
+.client-list table.table tbody th {
+	font-weight: normal;
+}
+
+.bg-kea-ltblue {
+	background-color: #b7d4e2 !important;
+}
+
 /* PREV STYLES from WebMain.aspx? */
 #bg {
 	display: block;
@@ -255,10 +263,10 @@ button.search-close {
 }
 
 /* DUMMY STYLES */
-/*#OnCallTrxDiv*/
+/*#OnCallTrxDiv
 #insert-view-content-here {
 	outline: 2px dotted blue;
-}
+}*/
 
 .outline-purple {
 	outline: 2px dotted purple;

@@ -2,7 +2,7 @@
 jQuery('#main-menu .home').on('click', function(e){
 	console.log('Jackson!');
 	e.stopPropagation();
-	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/dummy.html');
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/home.html');
 });
 
 // maybe replace with name-swap via IDs

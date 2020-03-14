@@ -3,9 +3,9 @@
 <%@ Register Src="CustomerControl/DisplayModeMenu.ascx" TagName="DisplayModeMenu" TagPrefix="uc2" %>
 
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
 <!--<![endif]-->
@@ -16,12 +16,13 @@
 	<title>KEA QA 2020 > TITLE!!</title>
 	<link rel="stylesheet" href="CSS/normalize.css">
 	<link rel="stylesheet" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/bootstrap-select.css">
 	<link rel="stylesheet" href="CSS/font-awesome.min.css">
 	<link rel="stylesheet" href="CSS/themify-icons.css">
 	<link rel="stylesheet" href="CSS/flag-icon.min.css">
 	<link rel="stylesheet" href="CSS/cs-skin-elastic.css">
 	<!-- 
-		OLD CSS - DISCARD! <link href="css/style.css" type="text/css" rel="stylesheet" />
+		OLD CSS - DISCARD! <link href="css/old-style.css" type="text/css" rel="stylesheet" />
 	-->
 	<link rel="stylesheet" href="CSS/per-sufee.css">
 	<link rel="stylesheet" href="CSS/style-2020.css">
@@ -47,7 +48,7 @@
 			<!-- TOP HORIZ NAV -->
 			<div id="main-menu" class="main-menu collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<h3 class="menu-title">[navigation]</h3><!-- !!! NON-SEMANT / change to styled LI !!! -->
+					<h3 class="menu-title">&nbsp;</h3><!-- !!! NON-SEMANT / change to styled LI !!! -->
 					<li class="menu-item-no-children dropdown">
 						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>HOME</a>
 					</li>
@@ -116,17 +117,19 @@
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Monitoring Tools/CAP</a></li>
 						</ul>
 					</li>
+<!-- 				THESE FEATURES COMMENTED-OUT PER FU
 					<li class="menu-item-no-children dropdown">
 						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MESSAGES</a>
-					</li>	
+					</li>
 					<li class="menu-item-no-children dropdown">
 						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>LINKS</a>
-					</li>	
+					</li> -->
 					<li class="menu-item-no-children dropdown">
 						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MY SETTINGS</a>
 					</li>	
-					<li class="menu-item-no-children dropdown">
+<!-- 					<li class="menu-item-no-children dropdown">
 						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MY BILLING</a>
+					</li> -->
 					<li class="menu-item-no-children dropdown">
 						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MY TICKLER</a>
 					</li>	
@@ -169,7 +172,7 @@
 		<header id="header" class="header">
 			<div class="header-menu">
 				<div class="col-sm-7">
-					<a id="menuToggle" class="menutoggle pull-left"><i class="fa fa-chevron-circle-left"></i></a>
+					<!-- <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa-chevron-circle-left"></i></a> -->
 					<div class="header-left">
 						<button class="search-trigger"><i class="fa fa-search"></i></button><!-- change to SEARCH icon -->
 						<div class="form-inline">
@@ -248,9 +251,9 @@
 				</div>
 				<div class="col-sm-5">
 					<div class="user-area dropdown float-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<!-- 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
-						</a>
+						</a> -->
 						<div class="user-menu dropdown-menu">
 							<a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
 							<a class="nav-link" href="#"><i class="fa fa-user"></i> Notifications <span class="count">13</span></a>
@@ -259,7 +262,7 @@
 						</div>
 					</div>
 					<div class="language-select dropdown" id="language-select">
-						<a class="dropdown-toggle" href="#" data-toggle="dropdown"  id="language" aria-haspopup="true" aria-expanded="true">
+						<a class="dropdown-toggle" href="#" data-toggle="dropdown"id="language" aria-haspopup="true" aria-expanded="true">
 							<i class="flag-icon flag-icon-us"></i>
 						</a>
 						<div class="dropdown-menu" aria-labelledby="language">
@@ -286,17 +289,17 @@
 			<div class="SHL-controls">
 				<ul>
 					<li>
-						<input type="image" id="btnSupport" runat="server" alt="Support" style="width: 25px;height:25px"  
+						<input type="image" id="btnSupport" runat="server" alt="Support" style="width: 25px;height:25px"
 						src="./img/supportdesk.ico" title="Support"
 						onclick="javascript:window.top.outsidelinks(1);return false;" />
 					</li>
 					<li>
-						<input type="image" id="btnHelp" runat="server" alt="Help" style="width: 25px;height:25px"  
+						<input type="image" id="btnHelp" runat="server" alt="Help" style="width: 25px;height:25px"
 						src="./img/help.ico" title="Help"
 						onclick="javascript:window.top.outsidelinks(2);return false;" /> 
 					</li>
 					<li>
-						<input type="image" id="btnLogout" runat="server" alt="Logout" style="width: 50px;height:25px"  
+						<input type="image" id="btnLogout" runat="server" alt="Logout" style="width: 50px;height:25px"
 						src="./img/logout.jpg" title="Logout"
 						onclick="window.top.document.location.replace('./webLogout.aspx');return false;" />
 					</li>
@@ -306,7 +309,6 @@
 			<uc2:DisplayModeMenu ID="DisplayModeMenu1" runat="server" />
 		</div>
 		
-		<div class="content mt-3">
 
 			<!-- START content -->
 			<div class="content mt-3">
@@ -314,6 +316,8 @@
 
 					<div id="insert-view-content-here"></div>
 
+
+				<!-- END .load() CONTENT  -->
 				</div>
 			</div>
 			<!-- END content -->
@@ -327,7 +331,7 @@
 	<!-- OLD JQUERY / SUFEE REQUIRES 2.1.4 ABOVE - DISCARD!!
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	-->
-   <%-- <script>
+ <%-- <script>
 		function resizeIframe(obj) {
 			alert(obj.contentWindow.document.body.scrollHeight);
 			obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
