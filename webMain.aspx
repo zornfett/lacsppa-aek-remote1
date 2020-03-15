@@ -97,7 +97,7 @@
 						<a href="#" class="dropdown-toggle eforms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>E-FORMS</a>
 					</li>	
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle reportlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>REPORT LIST</a>
+						<a href="#" class="dropdown-toggle report-list" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>REPORT LIST</a>
 					</li>	
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle tickler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>TICKLER</a>
@@ -301,6 +301,8 @@
 				<!-- START .load() CONTENT  -->
 
 				<div id="insert-view-content-here"></div>
+
+
 
 
 			<!-- END .load() CONTENT  -->

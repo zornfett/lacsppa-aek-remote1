@@ -6,9 +6,16 @@ jQuery('#main-menu .home').on('click', function(e){
 
 // CLIENT views
 jQuery('#main-menu .profile-facesheet').on('click', function(e){
-	console.log('Jackson!');
 	e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-facesheet.html');
+});
+
+
+// REPORT LIST
+jQuery('#main-menu .report-list').on('click', function(e){
+	console.log('Jackson!');
+	e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/report-list.html');
 });
 
 // maybe replace with name-swap via IDs
