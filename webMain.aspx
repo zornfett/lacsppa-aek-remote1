@@ -56,7 +56,7 @@
 						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>CLIENT</a>
 						<ul class="sub-menu children dropdown-menu">
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="profile-facesheet">Profile</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Client Record Template</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" data-toggle="modal" data-target="#client-record-template">Client Record Template</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Case Notes</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Medical</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Medicaid Waiver</a></li>
@@ -303,8 +303,6 @@
 				<div id="insert-view-content-here"></div>
 
 
-
-
 			<!-- END .load() CONTENT  -->
 			</div>
 		</div>
@@ -312,10 +310,68 @@
 	</div>
 	<!-- END RIGHT-PANEL -->
 
+	<!--MODALS -->
+	<div class=" modal fade" id="client-record-template" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="mediumModalLabel">CASE LOAD REPORT</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-body card-block">
+								<div class="row form-group">
+									<div class="col col-md-3"><label for="select" class=" form-control-label">Template</label></div>
+									<div class="col-12 col-md-9">
+									<select name="select" id="ZZZZZ" class="form-control">
+										<option value="0">Please Select Group</option>
+										<option value="1">TKTKTKT</option>
+									</select>
+									</div>
+								</div>
+								<div class="form-group"><label for="ZZZZZ" class=" form-control-label">UCI#</label><input type="text" id="ZZZZZ" placeholder="" class="form-control"></div>
+								<div class="form-group"><label for="ZZZZZ" class=" form-control-label">First Name</label><input type="text" id="ZZZZZ" placeholder="" class="form-control"></div>
+								<div class="form-group"><label for="ZZZZZ" class=" form-control-label">Last Name</label><input type="text" id="ZZZZZ" placeholder="" class="form-control"></div>
+								<div class="row form-group">
+									<div class="col col-md-3"><label for="select" class=" form-control-label">Client Doc Category</label></div>
+									<div class="col-12 col-md-9">
+									<select name="select" id="ZZZZZ" class="form-control">
+										<option value="0">Please Select Group</option>
+										<option value="1">TKTKTKT</option>
+									</select>
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col col-md-3"><label for="select" class=" form-control-label">Client Doc Type</label></div>
+									<div class="col-12 col-md-9">
+									<select name="select" id="ZZZZZ" class="form-control">
+										<option value="0">Please Select Group</option>
+										<option value="1">TKTKTKT</option>
+									</select>
+									</div>
+								</div>
+								<div class="form-group"><label for="ZZZZZ" class=" form-control-label">Client Doc Date</label><input type="text" id="ZZZZZ" placeholder="" class="form-control"></div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+	<!-- 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button> -->
+					<button type="button" class="btn btn-primary">Print</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/per-sufee/popper.min.js"></script>
 	<script src="js/scripts-2020.js"></script>
-	<!-- OLD JQUERY / SUFEE REQUIRES 2.1.4 ABOVE - DISCARD!!
+	<!-- OLD JQUERY / SUFEE REQUIRES 2.1.4 OR ABOVE - DISCARD!!
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	-->
  <%-- <script>

@@ -19,7 +19,6 @@ jQuery('#main-menu .report-list').on('click', function(e){
 
 // TICKLER views
 jQuery('#main-menu .client-tickler').on('click', function(e){
-	console.log('Jackson!');
 	e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/tickler/client-tickler.html');
 });
