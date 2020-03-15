@@ -189,9 +189,50 @@ header .form-inline {
 	margin-left: .5em;
 }
 
+.client-default .tight-select-row .col-md-2 {
+	padding-right: 0 !important;
+} 
+
+.client-default .tight-select-row .col-md-3 .form-control-label {
+	font-size: .75em;
+}
+
+.client-default .dataTables_wrapper .row:first-child,
+.client-default .dataTables_wrapper .row:last-child {
+	display: none;
+} 
+
+.client-default table.table-bordered.dataTable th,
+.client-default table.table-bordered.dataTable td {
+	line-height: 1.15em;
+	text-align: center;
+} 
+
+/*.client-default table.table-bordered.dataTable .address {
+	width: 20em !important;
+} */
+
+.client-default .legend ul {
+	list-style: none;
+	padding: 0 1em;
+}
+.client-default .legend li {
+	display: inline-block;
+	font-size: .75em;
+	padding: 0 .5em;
+}
+
 .client-profile-def .content-topnav li a {
 	font-size: .8em;
 }
+
+.fa-square.pink { color: pink; }
+.fa-square.yellow { color: yellow; }
+.fa-square.red { color: red; }
+.fa-circle.red { color: red; }
+.fa-circle.green { color: green; }
+.fa-circle.blue { color: blue; }
+.fa-circle.purple { color: purple; }
 
 .tickler-client-results {
 	margin-top: 1em;

@@ -16,7 +16,8 @@
 	<title>KEA QA 2020 > TITLE!!</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap-select.css"> -->
+	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
 	<link rel="stylesheet" href="css/flag-icon.min.css">
@@ -53,7 +54,7 @@
 						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>HOME</a>
 					</li>
 					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>CLIENT</a>
+						<a href="#" class="dropdown-toggle client-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>CLIENT</a>
 						<ul class="sub-menu children dropdown-menu">
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="profile-facesheet">Profile</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" data-toggle="modal" data-target="#client-record-template">Client Record Template</a></li>
@@ -303,6 +304,9 @@
 				<div id="insert-view-content-here"></div>
 
 
+
+
+
 			<!-- END .load() CONTENT  -->
 			</div>
 		</div>
@@ -389,6 +393,10 @@
 		<script src="vendor/modernizr-2.6.2.min.js"></script>
 	-->
 	<script src="js/per-sufee/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/per-sufee/data-table/datatables.min.js"></script>
+	<script src="js/per-sufee/data-table/dataTables.bootstrap.min.js"></script>
+	<script src="js/per-sufee/data-table/dataTables.buttons.min.js"></script>
+	<script src="js/per-sufee/data-table/datatables-init.js"></script>
 
 	<script src="js/per-sufee/main.js"></script>
 	<script src="js/per-sufee/vendors/chart.js/dist/Chart.bundle.min.js"></script>
@@ -396,6 +404,12 @@
 
 	<script src="js/per-sufee/dashboard.js"></script>
 	<script src="js/per-sufee/widgets.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#bootstrap-data-table-export').DataTable();
+		} );
+	</script>
 	<!-- SUFEE MAP JS FILES - NOT IN USE
 	<script src="js/per-sufee/vendors/jqvmap/dist/jquery.vmap.min.js"></script>
 	<script src="js/per-sufee/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
