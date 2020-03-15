@@ -53,7 +53,7 @@
 						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>HOME</a>
 					</li>
 					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>CLIENT</a>
+						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>CLIENT</a>
 						<ul class="sub-menu children dropdown-menu">
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="profile-facesheet">Profile</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Client Record Template</a></li>
@@ -67,10 +67,10 @@
 						</ul>
 					</li>
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>TO DO LIST</a>
+						<a href="#" class="dropdown-toggle todo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>TO DO LIST</a>
 					</li>	
 					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>FORM LIST</a>
+						<a href="#" class="dropdown-toggle formlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>FORM LIST</a>
 						<ul class="sub-menu children dropdown-menu">
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">ESR List</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Intake</a></li>
@@ -92,25 +92,25 @@
 						</ul>
 					</li>
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>IMAGING</a>
+						<a href="#" class="dropdown-toggle imaging" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>IMAGING</a>
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>E-FORMS</a>
+						<a href="#" class="dropdown-toggle eforms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>E-FORMS</a>
 					</li>	
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>REPORT LIST</a>
+						<a href="#" class="dropdown-toggle reportlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>REPORT LIST</a>
 					</li>	
 					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>TICKLER</a>
+						<a href="#" class="dropdown-toggle tickler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>TICKLER</a>
 						<ul class="sub-menu children dropdown-menu">
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Client Tickler</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Vendor Tickler</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>VALIDATE</a>
+						<a href="#" class="dropdown-toggle validate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>VALIDATE</a>
 					</li>	
 					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>RESOURCE</a>
+						<a href="#" class="dropdown-toggle resource" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>RESOURCE</a>
 						<ul class="sub-menu children dropdown-menu">
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Profile</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">ID Notes</a></li>
@@ -119,28 +119,28 @@
 					</li>
 <!-- 				THESE FEATURES COMMENTED-OUT PER FU
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MESSAGES</a>
+						<a href="#" class="dropdown-toggle messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MESSAGES</a>
 					</li>
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>LINKS</a>
+						<a href="#" class="dropdown-toggle weblinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>LINKS</a>
 					</li> -->
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MY SETTINGS</a>
+						<a href="#" class="dropdown-toggle my-settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MY SETTINGS</a>
 					</li>	
 <!-- 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MY BILLING</a>
+						<a href="#" class="dropdown-toggle my-billing" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MY BILLING</a>
 					</li> -->
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MY TICKLER</a>
+						<a href="#" class="dropdown-toggle my-tickler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>MY TICKLER</a>
 					</li>	
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>SEARCH</a>
+						<a href="#" class="dropdown-toggle search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>SEARCH</a>
 					</li>	
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>REPORT GENERATOR</a>
+						<a href="#" class="dropdown-toggle reportgen" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>REPORT GENERATOR</a>
 					</li>
 					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>ADMINISTRATION</a>
+						<a href="#" class="dropdown-toggle admin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>ADMINISTRATION</a>
 						<ul class="sub-menu children dropdown-menu">
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Users</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; User List</a></li>
@@ -286,42 +286,27 @@
 		<div class="topnav-controls">
 			<div class="SHL-RAM">
 				<ul>
-					<li>
-						<a class="nav-link" href="#">Restore</a>
-					</li>
-					<li>
-						<a class="nav-link" href="#">Add</a>
-					</li>
-					<li>
-						<a class="nav-link" href="#"></i>Modify</a>
-					</li>
-					<li>
-						<a class="nav-link" href="#">Support</a>
-					</li>
-					<li>
-						<a class="nav-link" href="#">Help</a>
-					</li>
-					<li>
-						<a class="nav-link" href="#">Logout</a>
-					</li>
+					<li><a class="nav-link" href="#">Restore</a></li>
+					<li><a class="nav-link" href="#">Add</a></li>
+					<li><a class="nav-link" href="#"></i>Modify</a></li>
+					<li><a class="nav-link" href="#">Support</a></li>
+					<li><a class="nav-link" href="#">Help</a></li>
+					<li><a class="nav-link" href="#">Logout</a></li>
 				</ul>
 			</div>
 		</div>
-		
-			<!-- START content -->
-			<div class="content mt-3">
-				<div class="animated fadeIn">
-					<!-- START .load() CONTENT  -->
+		<!-- START content -->
+		<div class="content mt-3">
+			<div class="animated fadeIn">
+				<!-- START .load() CONTENT  -->
 
-					<div id="insert-view-content-here"></div>
+				<div id="insert-view-content-here"></div>
 
 
-				<!-- END .load() CONTENT  -->
-				</div>
+			<!-- END .load() CONTENT  -->
 			</div>
-			<!-- END content -->
-
 		</div>
+		<!-- END content -->
 	</div>
 	<!-- END RIGHT-PANEL -->
 

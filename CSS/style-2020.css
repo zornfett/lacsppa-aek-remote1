@@ -22,6 +22,7 @@ nav.navbar,
 .navbar .navbar-nav li.menu-item-has-children a:before {
 	color: #00274e !important; /* Lanterman text blue */
 }
+
 nav.navbar,
 .navbar .menu-title,
 .navbar .navbar-nav li > a,
@@ -34,11 +35,6 @@ nav.navbar,
 #main-menu .navbar-nav li > a:hover .menu-icon {
 	color: #00274e !important;
 }
-/* ?!?
-	{
-	color: #999 !important;
-	}
-*/
 
 .menutoggle {
 	background-color: #fdc54e; /* Lanterman yellow */
@@ -49,12 +45,10 @@ nav.navbar,
 	content: "\f138" !important;
 }
 
-#home a.home { font-weight: bold; }
-#client a.client { font-weight: bold; }
-#formlist a.formlist { font-weight: bold; }
-#reports a.reports { font-weight: bold; }
-#search a.search { font-weight: bold; }
-#todo a.todo { font-weight: bold; }
+li.menu-item-no-children > a,
+li.menu-item-has-children > a {
+	font-weight: bold;
+}
 
 #header .count {
 	background-color: #fdc54e !important;
@@ -65,18 +59,6 @@ a:hover.bg-flat-color-1,
 a:hover.bg-flat-color-2 {
 	background-color: #fdc54e !important;
 }
-
-/* CONTENT body styles
-h1 {
-	text-transform: uppercase;
-}
-.navbar .navbar-nav li .fa-square:before {
-	content: none !important;
-}
-#formlist .help-block {
-	font-size: 14px;
-}
-*/
 
 /* NEW [FEB25 et al] STYLES */
 header {
@@ -185,19 +167,20 @@ header .form-inline {
 }
 
 .card .card-body h4 {
-	margin-bottom: .5em;
+	margin-bottom: 1em;
 }
 
 .card .card-body .form-control-label {
 	font-weight: bold;
 }
 
-.client-profile-def .content-topnav li a {
-	font-size: .8em;
+.card .section-title .icons i {
+	font-size: 1.5em;
+	margin-left: .5em;
 }
 
-.form-group .form-control-label {
-	/*text-transform: capitalize;*/
+.client-profile-def .content-topnav li a {
+	font-size: .8em;
 }
 
 a.dropdown-toggle.client {
