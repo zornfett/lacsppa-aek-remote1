@@ -183,6 +183,28 @@ header .form-inline {
 	font-size: .8em;
 }
 
+.tickler-client-results {
+	margin-top: 1em;
+}
+
+.tickler-client-results h3 {
+	margin: 0 auto;
+}
+
+.tickler-client-results ul {
+	list-style: none;
+	margin: 0 auto;
+}
+.tickler-client-results li {
+	display: inline-block;
+	/*padding: 0 .5em;*/
+}
+.tickler-client-results li a {
+/*	color: #00274e;
+	font-weight: bold;
+	text-decoration: none !important;*/
+}
+
 a.dropdown-toggle.client {
 	font-weight: bold;
 }

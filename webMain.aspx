@@ -102,7 +102,7 @@
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle tickler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>TICKLER</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Client Tickler</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="client-tickler">Client Tickler</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Vendor Tickler</a></li>
 						</ul>
 					</li>
