@@ -60,14 +60,10 @@ nav.navbar,
 	background-color: #fdc54e !important;
 	color: #000 !important;
 }
-.bg-flat-color-1 {
-	color: #00274e !important;
-}
-.bg-flat-color-2 {
-	background-color: #fdc54e !important;
-}
+
+a:hover.bg-flat-color-1,
 a:hover.bg-flat-color-2 {
-	background-color: #f8f9fa !important;
+	background-color: #fdc54e !important;
 }
 
 /* CONTENT body styles
@@ -124,69 +120,6 @@ header .head-bottom .page-title {
 	font-weight: bold;
 }
 
-.topnav-controls {
-	position: relative;
-	background-color: #b7d4e2; 
-	width: 100%;
-	height: 3em;
-}
-
-.RAM-controls {
-	/*float: right;*/
-	position: absolute;
-	top: 14px;
-    right: 195px;
-	color: #00f;
-	font-size: 13px;
-	text-decoration: underline;
-}
-
-.RAM-controls ul {
-	
-	list-style: none;
-}
-
-.RAM-controls li {
-	display: inline;
-	padding: 0 .5em;
-	border-right: 1px solid #000;
-}
-
-.RAM-controls li:last-child {
-	border-right: none;
-}
-
-.SHL-controls {
-	/*float: right;*/
-	position: absolute;
-    top: 11px;
-    right: 37px;
-	color: #00f;
-	font-size: 13px;
-	text-decoration: underline;
-}
-
-.SHL-controls ul {
-	list-style: none;
-}
-
-.SHL-controls li {
-	display: inline;
-	padding: 0 .5em;
-}
-
-.SHL-controls li:last-child {
-
-}
-
-#maindiv {
-
-}
-
-a.dropdown-toggle.client {
-	font-weight: bold;
-}
-
 header .form-inline {
 	background-color: transparent !important;
 	height: inherit !important;
@@ -194,6 +127,81 @@ header .form-inline {
 
 .form-inline .form-control {
 	width: 100% !important;
+}
+
+.topnav-controls {
+	position: relative;
+	background-color: #b7d4e2; 
+	width: 100%;
+	height: 3em;
+}
+
+.SHL-RAM {
+	position: absolute;
+    top: 7px;
+    right: 56px;
+	color: #00f;
+	font-size: 13px;
+}
+
+.SHL-RAM ul {
+	list-style: none;
+}
+.SHL-RAM li {
+	display: inline-block;
+	padding: 0 .5em;
+	/*border-right: 1px solid #000;*/
+}
+
+.SHL-RAM li a {
+	color: #00274e;
+	font-weight: bold;
+	text-decoration: none !important;
+}
+
+.SHL-RAM li:last-child {
+	border-right: none;
+}
+
+.content {
+	padding: 0 !important;
+}
+
+.mt-3 {
+	margin-top: 0 !important;
+}
+
+.content-topnav ul {
+	list-style: none;
+}
+.content-topnav li {
+	display: inline-block;
+	padding: 0 .5em;
+}
+.content-topnav li a {
+	color: #00274e;
+	font-weight: bold;
+	text-decoration: none !important;
+}
+
+.card .card-body h4 {
+	margin-bottom: .5em;
+}
+
+.card .card-body .form-control-label {
+	font-weight: bold;
+}
+
+.client-profile-def .content-topnav li a {
+	font-size: .8em;
+}
+
+.form-group .form-control-label {
+	/*text-transform: capitalize;*/
+}
+
+a.dropdown-toggle.client {
+	font-weight: bold;
 }
 
 button.search-close {

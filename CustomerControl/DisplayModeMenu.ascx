@@ -48,17 +48,17 @@
 	
 </script>
 
-<link rel="stylesheet" href="css/style-2020a.css">
+<link rel="stylesheet" href="css/style-2020.css">
 <div class="RAM-controls">
 	<ul>
 		<li>
-			<asp:LinkButton id="btnRestore" runat="server" Text="Restore" OnClick="btnRestore_Click" OnClientClick="javascript:return Restore_Click();" />
+			<a class="nav-link" href="#">Restore</a>
 		</li>
 		<li>
-			<asp:LinkButton id="btnAddModules" runat="server" Text="Add" OnClick="btnAddModule_Click" />
+			<a class="nav-link" href="#">Add</a>
 		</li>
 		<li>
-			<asp:LinkButton id="btnModify" runat="server" Text="Modify" OnClick="btnModify_Click" /> 
+			<a class="nav-link" href="#"></i>Modify</a>
 		</li>
 	</ul>
 </div>

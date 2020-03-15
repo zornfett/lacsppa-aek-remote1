@@ -14,18 +14,18 @@
 <html>
 <head runat="server">
 	<title>KEA QA 2020 > TITLE!!</title>
-	<link rel="stylesheet" href="CSS/normalize.css">
-	<link rel="stylesheet" href="CSS/bootstrap.min.css">
-	<link rel="stylesheet" href="CSS/bootstrap-select.css">
-	<link rel="stylesheet" href="CSS/font-awesome.min.css">
-	<link rel="stylesheet" href="CSS/themify-icons.css">
-	<link rel="stylesheet" href="CSS/flag-icon.min.css">
-	<link rel="stylesheet" href="CSS/cs-skin-elastic.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/flag-icon.min.css">
+	<link rel="stylesheet" href="css/cs-skin-elastic.css">
 	<!-- 
 		OLD CSS - DISCARD! <link href="css/old-style.css" type="text/css" rel="stylesheet" />
 	-->
-	<link rel="stylesheet" href="CSS/per-sufee.css">
-	<link rel="stylesheet" href="CSS/style-2020.css">
+	<link rel="stylesheet" href="css/per-sufee.css">
+	<link rel="stylesheet" href="css/style-2020.css">
 
 	<link href="css/jqvmap.min.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
@@ -53,17 +53,17 @@
 						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>HOME</a>
 					</li>
 					<li class="menu-item-has-children dropdown">
-						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>CLIENT</a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>CLIENT</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Profile</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Client Record Template</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Case Notes</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Medical</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Medicaid Waiver</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">POS List</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">SIF List</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Document List</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">IFSP List</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="profile-facesheet">Profile</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Client Record Template</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Case Notes</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Medical</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Medicaid Waiver</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">POS List</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">SIF List</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Document List</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">IFSP List</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-no-children dropdown">
@@ -72,23 +72,23 @@
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>FORM LIST</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">ESR List</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Intake</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Psycho Social</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Eligibility</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Turning 3</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Lanterman</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Intake</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Psycho Social</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Eligibility</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Transfer</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Case Transfer</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Unit Case Transfer</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Statistics</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Time Card</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Exempt Time Card</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Non-Exempt Time Card</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Mileage</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">ESR List</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Intake</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Psycho Social</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Eligibility</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Turning 3</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Lanterman</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Intake</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Psycho Social</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Eligibility</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Transfer</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Case Transfer</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Unit Case Transfer</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Statistics</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Time Card</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Exempt Time Card</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Non-Exempt Time Card</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Mileage</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-no-children dropdown">
@@ -102,8 +102,8 @@
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>TICKLER</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Client Tickler</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Vendor Tickler</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Client Tickler</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Vendor Tickler</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-no-children dropdown">
@@ -112,9 +112,9 @@
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>RESOURCE</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Profile</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">ID Notes</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Monitoring Tools/CAP</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Profile</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">ID Notes</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Monitoring Tools/CAP</a></li>
 						</ul>
 					</li>
 <!-- 				THESE FEATURES COMMENTED-OUT PER FU
@@ -142,22 +142,22 @@
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle client" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>ADMINISTRATION</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Users</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; User List</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; User Group</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Labels</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Account Settings</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Tools</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; CaseNote Type</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; CaseNote Template</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; CaseNote Addendum</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Forms Management</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Report Management</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Announcement</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">Tracking</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; User Login</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Event List</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="ZZZZZZ">&mdash; Access List</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Users</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; User List</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; User Group</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Labels</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Account Settings</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Tools</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; CaseNote Type</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; CaseNote Template</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; CaseNote Addendum</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Forms Management</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Report Management</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Announcement</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Tracking</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; User Login</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Event List</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; Access List</a></li>
 						</ul>
 					</li>		
 				</ul>
@@ -168,7 +168,6 @@
 	<!-- END LEFT PANEL -->
 	<!-- RIGHT PANEL -->
 	<div id="right-panel" class="right-panel">
-		<!-- HEADER-->
 		<header id="header" class="header">
 			<div class="header-menu">
 				<div class="col-sm-7">
@@ -284,35 +283,35 @@
 				</div>
 			</div>
 		</header>
-		<!-- END HEADER-->
 		<div class="topnav-controls">
-			<div class="SHL-controls">
+			<div class="SHL-RAM">
 				<ul>
 					<li>
-						<input type="image" id="btnSupport" runat="server" alt="Support" style="width: 25px;height:25px"
-						src="./img/supportdesk.ico" title="Support"
-						onclick="javascript:window.top.outsidelinks(1);return false;" />
+						<a class="nav-link" href="#">Restore</a>
 					</li>
 					<li>
-						<input type="image" id="btnHelp" runat="server" alt="Help" style="width: 25px;height:25px"
-						src="./img/help.ico" title="Help"
-						onclick="javascript:window.top.outsidelinks(2);return false;" /> 
+						<a class="nav-link" href="#">Add</a>
 					</li>
 					<li>
-						<input type="image" id="btnLogout" runat="server" alt="Logout" style="width: 50px;height:25px"
-						src="./img/logout.jpg" title="Logout"
-						onclick="window.top.document.location.replace('./webLogout.aspx');return false;" />
+						<a class="nav-link" href="#"></i>Modify</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#">Support</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#">Help</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#">Logout</a>
 					</li>
 				</ul>
 			</div>
-			<!-- RAM controls -->
-			<uc2:DisplayModeMenu ID="DisplayModeMenu1" runat="server" />
 		</div>
 		
-
 			<!-- START content -->
 			<div class="content mt-3">
 				<div class="animated fadeIn">
+					<!-- START .load() CONTENT  -->
 
 					<div id="insert-view-content-here"></div>
 
@@ -402,6 +401,8 @@ OLD HEADER GARBAGE ::
 		<asp:Label ID="pagetitle" runat="server" Font-Bold="true" Font-Size="Small" ForeColor="#660033" Text=""></asp:Label>
 	</div>
 </div> 
+
+<uc2:DisplayModeMenu ID="DisplayModeMenu1" runat="server" />
 
 ::
 

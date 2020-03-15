@@ -1412,12 +1412,12 @@
 
 
 .bg-flat-color-1 {
-  background: #20a8d8;
+  background: #b7d4e2;
 }
 
 
 .bg-flat-color-2 {
-  background: #63c2de;
+  background: #fff;
 }
 
 
@@ -1924,6 +1924,7 @@ body.open .navbar .navbar-brand.hidden {
 	margin-top: 0;
 	padding: 0 5px;
 	width: 100%;
+	margin-bottom: .5em; /* RBB */
 }
 
 	.right-panel .breadcrumbs .col-lg-8 .page-header {
