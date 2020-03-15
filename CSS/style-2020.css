@@ -179,6 +179,16 @@ header .form-inline {
 	margin-left: .5em;
 }
 
+.card-header-icons {
+	font-size: 1.5em;
+	text-align: right;
+}
+
+.card-header-icons a {
+	display: inline-block;
+	margin-left: .5em;
+}
+
 .client-profile-def .content-topnav li a {
 	font-size: .8em;
 }
