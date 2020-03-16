@@ -304,7 +304,6 @@
 				<div id="insert-view-content-here"></div>
 
 
-
 			<!-- END .load() CONTENT  -->
 			</div>
 		</div>

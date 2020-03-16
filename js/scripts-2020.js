@@ -1,4 +1,7 @@
 // THIS INPUTS VIEW HTML INTO #insert-view-content-here
+
+console.log('check one');
+
 jQuery('#main-menu .home').on('click', function(e){
 	e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/home.html');
@@ -6,7 +9,6 @@ jQuery('#main-menu .home').on('click', function(e){
 
 // CLIENT views
 jQuery('#main-menu .client-default').on('click', function(e){
-	console.log('choy');
 	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/client-default.html');
 });
@@ -16,6 +18,12 @@ jQuery('#main-menu .profile-facesheet, table.table-bordered.dataTable .fa-pencil
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-facesheet.html');
 });
 
+// SUBORDINATE LINKS like this not working from this file / must be inline 
+jQuery('.content-topnav .profile-financial-info').on('click', function(e){
+	console.log('choy');
+	e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-info.html');
+});
 
 // REPORT LIST view
 jQuery('#main-menu .report-list').on('click', function(e){

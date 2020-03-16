@@ -189,6 +189,36 @@ header .form-inline {
 	margin-left: .5em;
 }
 
+a.dropdown-toggle.client {
+	font-weight: bold;
+}
+
+button.search-close {
+	position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+.add-button-content {
+	display: none;
+}
+
+a .fa {
+	font-size: 1.5em;
+}
+
+.fa-square.pink { color: pink; }
+.fa-square.yellow { color: yellow; }
+.fa-square.red { color: red; }
+.fa-circle.red { color: red; }
+.fa-circle.green { color: green; }
+.fa-circle.blue { color: blue; }
+.fa-circle.purple { color: purple; }
+
+.bg-kea-ltblue {
+	background-color: #b7d4e2 !important;
+}
+
 .client-default .tight-select-row .col-md-2 {
 	padding-right: 0 !important;
 } 
@@ -224,12 +254,8 @@ header .form-inline {
 	padding: 0 .5em;
 }
 
-.client-profile-facesheet .content-topnav li a {
-	font-size: .8em;
-}
-
-.validate-default {
-
+.client-list table.table tbody th {
+	font-weight: normal;
 }
 
 .validate-default .form-check-inline input {
@@ -243,14 +269,14 @@ header .form-inline {
 	 /* global? */
 } 
 
+.content-topnav li a {
+	font-size: .8em;
+}
 
-.fa-square.pink { color: pink; }
-.fa-square.yellow { color: yellow; }
-.fa-square.red { color: red; }
-.fa-circle.red { color: red; }
-.fa-circle.green { color: green; }
-.fa-circle.blue { color: blue; }
-.fa-circle.purple { color: purple; }
+.content-topnav.secondary {
+	background-color: #fff;
+	padding-top: .5em;
+}
 
 .tickler-client-results {
 	margin-top: 1em;
@@ -272,24 +298,6 @@ header .form-inline {
 /*	color: #00274e;
 	font-weight: bold;
 	text-decoration: none !important;*/
-}
-
-a.dropdown-toggle.client {
-	font-weight: bold;
-}
-
-button.search-close {
-	position: absolute;
-    top: 1px;
-    right: 1px;
-}
-
-.client-list table.table tbody th {
-	font-weight: normal;
-}
-
-.bg-kea-ltblue {
-	background-color: #b7d4e2 !important;
 }
 
 /* PREV STYLES from WebMain.aspx? */
