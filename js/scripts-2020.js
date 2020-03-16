@@ -29,4 +29,11 @@ jQuery('#main-menu .client-tickler').on('click', function(e){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/tickler/client-tickler.html');
 });
 
+// VALIDATE views
+jQuery('#main-menu .validate-default').on('click', function(e){
+	e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/validate/validate-default.html');
+});
+
+
 // maybe replace with name-swap via IDs

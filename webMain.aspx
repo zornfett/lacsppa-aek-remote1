@@ -108,7 +108,7 @@
 						</ul>
 					</li>
 					<li class="menu-item-no-children dropdown">
-						<a href="#" class="dropdown-toggle validate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>VALIDATE</a>
+						<a href="#" class="dropdown-toggle validate-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>VALIDATE</a>
 					</li>	
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle resource" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>RESOURCE</a>
@@ -302,8 +302,6 @@
 				<!-- START .load() CONTENT  -->
 
 				<div id="insert-view-content-here"></div>
-
-
 
 
 

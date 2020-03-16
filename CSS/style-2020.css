@@ -198,7 +198,9 @@ header .form-inline {
 }
 
 .client-default .dataTables_wrapper .row:first-child,
-.client-default .dataTables_wrapper .row:last-child {
+.client-default .dataTables_wrapper .row:last-child,
+.validate-default .dataTables_wrapper .row:first-child,
+.validate-default .dataTables_wrapper .row:last-child {
 	display: none;
 } 
 
@@ -222,9 +224,25 @@ header .form-inline {
 	padding: 0 .5em;
 }
 
-.client-profile-def .content-topnav li a {
+.client-profile-facesheet .content-topnav li a {
 	font-size: .8em;
 }
+
+.validate-default {
+
+}
+
+.validate-default .form-check-inline input {
+	margin-left: .5em;
+}
+
+.validate-default table.table-bordered.dataTable th,
+.validate-default table.table-bordered.dataTable td {
+	 font-size: .8em;
+	 padding-right: .5em !important;
+	 /* global? */
+} 
+
 
 .fa-square.pink { color: pink; }
 .fa-square.yellow { color: yellow; }
