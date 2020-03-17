@@ -1,9 +1,9 @@
-					<div class="profile-financial-info">
+					<div class="profile-financial-health">
 						<div class="breadcrumbs">
 							<div class="col-sm-4">
 								<div class="page-header float-left">
 									<div class="page-title">
-										<h1>CLIENT > Profile > Financial</h1>
+										<h1>Financial</h1>
 									</div>
 								</div>
 							</div>
@@ -31,7 +31,7 @@
 						<div class="col-md-12 content-topnav secondary">
 							<ul>
 								<li><a href="#" class="profile-financial-info">Financial Info</a></li>
-								<li><a href="#" class="health-benes">Health Benefits</a></li>
+								<li><a href="#" class="profile-financial-health">Health Benefits</a></li>
 								<li><a href="#" class="other-benes">Other Benefits/Burial Trusts</a></li>
 								<li><a href="#" class="sls">SLS</a></li>
 								<li><a href="#" class="fcpp">FCPP/AFPF</a></li>
@@ -262,11 +262,5 @@
 					-->
 					</div>
 					
-					<script type="text/javascript">
-						// these scripts necessary ONLY for development #discard
-						jQuery('.content-topnav .profile-financial-info').on('click', function(e){
-							console.log('choy');
-							e.stopPropagation();
-							jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-info.html');
-						});
-					</script>
+					<!-- script below necessary ONLY for development #discard -->
+					<script src="/KEA_QA/js/development-scripts/client-profile.js"></script>

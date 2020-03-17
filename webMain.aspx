@@ -303,7 +303,6 @@
 
 				<div id="insert-view-content-here"></div>
 
-
 			<!-- END .load() CONTENT  -->
 			</div>
 		</div>
@@ -356,7 +355,6 @@
 									</div>
 								</div>
 								<div class="form-group"><label for="ZZZZZ" class=" form-control-label">Client Doc Date</label><input type="text" id="ZZZZZ" placeholder="" class="form-control"></div>
-
 							</div>
 						</div>
 					</div>
@@ -371,7 +369,7 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/per-sufee/popper.min.js"></script>
-	<script src="js/scripts-2020.js"></script>
+	<script src="js/development-scripts/scripts-2020.js"></script>
 	<!-- OLD JQUERY / SUFEE REQUIRES 2.1.4 OR ABOVE - DISCARD!!
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	-->
