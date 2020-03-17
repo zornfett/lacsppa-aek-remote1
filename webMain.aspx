@@ -327,7 +327,7 @@
 							<div class="card-body card-block">
 								<div class="row form-group">
 									<div class="col col-md-3"><label for="select" class="form-control-label">Template</label></div>
-									<div class="col-12 col-md-9">
+									<div class="col-md-9">
 									<select name="select" id="ZZZZZ" class="form-control">
 										<option value="0">Please Select Group</option>
 										<option value="1">TKTKTKT</option>
@@ -339,7 +339,7 @@
 								<div class="form-group"><label for="ZZZZZ" class="form-control-label">Last Name</label><input type="text" id="ZZZZZ" placeholder="" class="form-control"></div>
 								<div class="row form-group">
 									<div class="col col-md-3"><label for="select" class="form-control-label">Client Doc Category</label></div>
-									<div class="col-12 col-md-9">
+									<div class="col-md-9">
 									<select name="select" id="ZZZZZ" class="form-control">
 										<option value="0">Please Select Group</option>
 										<option value="1">TKTKTKT</option>
@@ -348,14 +348,17 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3"><label for="select" class="form-control-label">Client Doc Type</label></div>
-									<div class="col-12 col-md-9">
+									<div class="col-md-9">
 									<select name="select" id="ZZZZZ" class="form-control">
 										<option value="0">Please Select Group</option>
 										<option value="1">TKTKTKT</option>
 									</select>
 									</div>
 								</div>
-								<div class="form-group"><label for="ZZZZZ" class="form-control-label">Client Doc Date</label><input type="text" id="ZZZZZ" placeholder="" class="form-control"></div>
+								<div class="row form-group">
+									<div class="col col-md-3"><label for="input" class="form-control-label">Client Doc Date</label></div>
+									<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+								</div>
 							</div>
 						</div>
 					</div>
