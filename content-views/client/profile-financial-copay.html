@@ -1,0 +1,209 @@
+				<div class="profile-financial-copay">
+					<div class="breadcrumbs">
+						<div class="col-md-6">
+							<div class="page-header float-left">
+								<div class="page-title">
+									<h1>Co-Payment/Co-Insurance/Deductible Reimbursement List</h1>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 card-header-icons">
+							<a href="#" title="save"><i class="fa fa-save"></i></a>
+							<a href="#" title="print"><i class="fa fa-print"></i></a>
+						</div>
+					</div>
+					<div class="col-md-12 content-topnav">
+						<ul>
+							<li><a href="#" class="profile-facesheet">Face Sheet</a></li>
+							<li><a href="#" class="profile-financial-info">Financial</a></li>
+							<li><a href="#" class="profile-legal">Legal</a></li>
+							<li><a href="#" class="profile-status">Status Dates</a></li>
+							<li><a href="#" class="profile-admin">Administration</a></li>
+							<li><a href="#" class="profile-referrals">Referrals</a></li>
+							<li><a href="#" class="profile-employment">Employment</a></li>
+							<li><a href="#" class="profile-schools">Schools</a></li>
+							<li><a href="#" class="profile-programs">Programs</a></li>
+							<li><a href="#" class="profile-pos">POS Auths</a></li>
+							<li><a href="#" class="profile-contacts">Contacts</a></li>
+							<li><a href="#" class="profile-intake">Intake Forms</a></li>
+							<li><a href="#" class="profile-permission">Permission</a></li>
+							<li><a href="#" class="profile-sdp">SDP</a></li>
+						</ul>
+					</div>
+					<div class="col-md-12 content-topnav secondary">
+						<ul>
+							<li><a href="#" class="profile-financial-info">Financial Info</a></li>
+							<li><a href="#" class="profile-financial-health">Health Benefits</a></li>
+							<li><a href="#" class="other-benes">Other Benefits/Burial Trusts</a></li>
+							<li><a href="#" class="sls">SLS</a></li>
+							<li><a href="#" class="fcpp">FCPP/AFPF</a></li>
+							<li><a href="#" class="copay">Co-Pay/Co-Insurance/Deductible Reimbursement List</a></li>
+						</ul>
+					</div>
+					<div class="card">
+						<div class="card-body card-block">
+							<div class="col-md-12">
+								<h4>FCPP List</h4>
+								<!-- this icon activates copay-modal -->
+								<div class="col-md-1">
+									<a href="#" title="add" data-toggle="modal" data-target="#copay-modal"><i class="fa fa-plus-circle"></i></a>
+								</div>
+								<table id="bootstrap-data-table" class="table table-striped table-bordered">
+									<thead>
+										<tr>
+											<th>Entry Date</th>
+											<th>Entered By</th>
+											<th>Edit</th>
+											<th>DELETE</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>value</td>
+											<td>value</td>
+											<td><a href="#"><i class="fa fa-pencil-square-o"></i><!-- this a popular icon in 'EDIT' columns --></a></td>
+											<td>value</td>
+										</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- COPAY MODAL - NOTE: should be a page / this is a lot of data entry that could be lost by accidental modal close; should have SUBMIT? -->
+				<div class="modal fade" id="copay-modal" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="mediumModalLabel">Client Co-Pay/Co-Insurance Reimbursement Detail</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="col-lg-12">
+									<div class="card">
+										<div class="card-body card-block">
+											<div class="row">
+												<div class="col-md-8">
+													<h4>Co-Payment/Co-Insurance Reimbursement Under 400% Federal Poverty Level</h4>
+													<p><strong>Client:</strong> <span>nameValue</span> <strong>DOB:</strong> <span>value</span></p>
+													<p><strong>Case Manager</strong>: <span>value</span></p>
+												</div>
+												<div class="col-md-4 card-header-icons">
+													<a href="#" title="print"><i class="fa fa-print"></i></a>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Input Date</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Insurance Company Name</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Service Or Item Requested</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Individual Out Of Pocket Maximum (OOPM)</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-6"><label for="select" class="form-control-label">Copayment</label></div>
+													<div class="col-md-6">
+														<select name="select" id="ZZZZZ" class="form-control">
+															<option value="0">Please select</option>
+															<option value="1">TKTKTKT</option>
+														</select>
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Dollar Amount Per Copayment</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Copayment Frequency</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-6"><label for="select" class="form-control-label">Co-Insurance?</label></div>
+													<div class="col-md-6">
+														<select name="select" id="ZZZZZ" class="form-control">
+															<option value="0">Please select</option>
+															<option value="1">TKTKTKT</option>
+														</select>
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Co-Insurance Percentage</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Service Or Item Actual Cost</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Co-Insurance Cost</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-6"><label for="select" class="form-control-label">Deductible?</label></div>
+													<div class="col-md-6">
+														<select name="select" id="ZZZZZ" class="form-control">
+															<option value="0">Please select</option>
+															<option value="1">TKTKTKT</option>
+														</select>
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Individual Deductible Amount</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-63"><input type="checkbox" id="ZZZZZ" name="ZZZZZ" value="ZZZZZ" class="form-check-input"> <label for="select" class="form-control-label">Purchase Reimbursement</label></div>
+													<div class="col col-md-6"><input type="checkbox" id="ZZZZZ" name="ZZZZZ" value="ZZZZZ" class="form-check-input"> <label for="select" class="form-control-label">Vendor</label></div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-6"><label for="select" class="form-control-label">Reimbursement/Vendor Number</label></div>
+													<div class="col-md-6">
+														<select name="select" id="ZZZZZ" class="form-control">
+															<option value="0">Please select</option>
+															<option value="1">TKTKTKT</option>
+														</select>
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-6"><label for="select" class="form-control-label">Income/Extraordinary Event Exemption</label></div>
+													<div class="col-md-6">
+														<select name="select" id="ZZZZZ" class="form-control">
+															<option value="0">Please select</option>
+															<option value="1">TKTKTKT</option>
+														</select>
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Exemption Date</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Copayment/Co-Insurance/Deductible Start Date</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+												<div class="row form-group">
+													<div class="col col-md-6"><label for="text-input" class="form-control-label">Copayment/Co-Insurance/Deductible End Date</label></div>
+													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- script below necessary ONLY for development #discard -->
+				<script src="/KEA_QA/js/development-scripts/client-profile.js"></script>

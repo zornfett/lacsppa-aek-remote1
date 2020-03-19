@@ -23,11 +23,16 @@ jQuery('.content-topnav .sls').on('click', function(e){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-sls.html');
 });
 
-// CLIENT > FINANCIAL > SLS view populate
+// CLIENT > FINANCIAL > FCPP
 jQuery('.content-topnav .fcpp').on('click', function(e){
-	console.log('choy');
 	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-fcpp.html');
 });
 
 
+// CLIENT > FINANCIAL > COPAY
+jQuery('.content-topnav .copay').on('click', function(e){
+	console.log('choy');
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-copay.html');
+});
