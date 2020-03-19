@@ -19,8 +19,15 @@ jQuery('.content-topnav .other-benes').on('click', function(e){
 
 // CLIENT > FINANCIAL > SLS view populate
 jQuery('.content-topnav .sls').on('click', function(e){
-	console.log('choy');
 	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-sls.html');
 });
+
+// CLIENT > FINANCIAL > SLS view populate
+jQuery('.content-topnav .fcpp').on('click', function(e){
+	console.log('choy');
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-fcpp.html');
+});
+
 
