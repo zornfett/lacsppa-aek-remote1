@@ -93,10 +93,14 @@ jQuery('.content-topnav .legal-info').on('click', function(e){
 
 // CLIENT > LEGAL judicial view populate
 jQuery('.content-topnav .judicial').on('click', function(e){
-	console.log('chunga')
 ;	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-judicial.html');
 });
 
-
+// CLIENT > LEGAL fair-hearing view populate
+jQuery('.content-topnav .fair-hearing').on('click', function(e){
+	console.log('chunga')
+;	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-fair.html');
+});
 
