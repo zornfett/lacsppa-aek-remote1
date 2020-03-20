@@ -89,9 +89,16 @@ jQuery('.content-topnav .confidential, .content-topnav .profile-legal').on('clic
 
 // CLIENT > LEGAL INFO view populate
 jQuery('.content-topnav .legal-info').on('click', function(e){
-	console.log('chunga')
 ;	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-info.html');
 });
+
+// CLIENT > LEGAL judicial view populate
+jQuery('.content-topnav .judicial').on('click', function(e){
+	console.log('chunga')
+;	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-judicial.html');
+});
+
 
 
