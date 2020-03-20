@@ -105,7 +105,13 @@ jQuery('.content-topnav .fair-hearing').on('click', function(e){
 
 // CLIENT > LEGAL VOTER view populate
 jQuery('.content-topnav .voter').on('click', function(e){
-	console.log('chunga')
 ;	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-voter.html');
+});
+
+// CLIENT > LEGAL VOTER view populate
+jQuery('.content-topnav .imd').on('click', function(e){
+	console.log('chunga')
+;	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-imd.html');
 });
