@@ -38,5 +38,53 @@ jQuery('#main-menu .validate-default').on('click', function(e){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/validate/validate-default.html');
 });
 
+// CLIENT > PROFILE > FINANCIAL
 
-// maybe replace with name-swap via IDs
+
+// CLIENT > FINANCIAL INFO view populate
+jQuery('.content-topnav .profile-financial-info').on('click', function(e){
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-info.html');
+});
+
+// CLIENT > FINANCIAL > HEALTH BENEFIT view populate
+jQuery('.content-topnav .profile-financial-health').on('click', function(e){
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-health.html');
+});
+
+// CLIENT > FINANCIAL > HEALTH BENEFIT view populate
+jQuery('.content-topnav .other-benes').on('click', function(e){
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-other.html');
+});
+
+// CLIENT > FINANCIAL > SLS view populate
+jQuery('.content-topnav .sls').on('click', function(e){
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-sls.html');
+});
+
+// CLIENT > FINANCIAL > FCPP
+jQuery('.content-topnav .fcpp').on('click', function(e){
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-fcpp.html');
+});
+
+
+// CLIENT > FINANCIAL > COPAY
+jQuery('.content-topnav .copay').on('click', function(e){
+	console.log('choy');
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-financial-copay.html');
+});
+
+
+// CLIENT > PROFILE > LEGAL
+
+// CLIENT > LEGAL CONFIDENTIAL view populate
+jQuery('.content-topnav .confidential, .content-topnav .profile-legal').on('click', function(e){
+	console.log('chunga')
+;	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-confidential.html');
+});
