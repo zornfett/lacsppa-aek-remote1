@@ -1,7 +1,5 @@
 // THIS INPUTS VIEW HTML INTO 
 
-// console.log('check one');
-
 jQuery('#main-menu .home').on('click', function(e){
 	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/home.html');
