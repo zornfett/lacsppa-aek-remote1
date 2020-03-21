@@ -81,37 +81,43 @@ jQuery('.content-topnav .copay').on('click', function(e){
 
 // CLIENT > LEGAL CONFIDENTIAL view populate
 jQuery('.content-topnav .confidential, .content-topnav .profile-legal').on('click', function(e){
-;	// e.stopPropagation();
+	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-confidential.html');
 });
 
 // CLIENT > LEGAL INFO view populate
 jQuery('.content-topnav .legal-info').on('click', function(e){
-;	// e.stopPropagation();
+	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-info.html');
 });
 
 // CLIENT > LEGAL judicial view populate
 jQuery('.content-topnav .judicial').on('click', function(e){
-;	// e.stopPropagation();
+	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-judicial.html');
 });
 
 // CLIENT > LEGAL fair-hearing view populate
 jQuery('.content-topnav .fair-hearing').on('click', function(e){
-;	// e.stopPropagation();
+	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-fair.html');
 });
 
 // CLIENT > LEGAL VOTER view populate
 jQuery('.content-topnav .voter').on('click', function(e){
-;	// e.stopPropagation();
+	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-voter.html');
 });
 
 // CLIENT > LEGAL VOTER view populate
 jQuery('.content-topnav .imd').on('click', function(e){
-	console.log('chunga')
-;	// e.stopPropagation();
+	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-imd.html');
 });
+
+// CLIENT > LEGAL VOTER view populate
+jQuery('.content-topnav .profile-status').on('click', function(e){
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-status-dates.html');
+});
+
