@@ -115,9 +115,15 @@ jQuery('.content-topnav .imd').on('click', function(e){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-legal-imd.html');
 });
 
-// CLIENT > LEGAL VOTER view populate
+// CLIENT > STATUS DATES view populate
 jQuery('.content-topnav .profile-status').on('click', function(e){
 	// e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-status-dates.html');
+});
+
+// CLIENT > ADMINISTRATION view populate
+jQuery('.content-topnav .profile-admin').on('click', function(e){
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-administration.html');
 });
 
