@@ -128,3 +128,7 @@ jQuery('.content-topnav .profile-programs').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-programs.html');
 });
 
+// CLIENT > POS List view populate
+jQuery('.content-topnav .profile-pos').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-pos-list.html');
+});

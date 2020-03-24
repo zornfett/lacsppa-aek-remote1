@@ -189,6 +189,10 @@ header .form-inline {
 	margin-left: .5em;
 }
 
+.breadcrumbs .card-header-icons a {
+	margin-top: .25em;
+}
+
 a.dropdown-toggle.client {
 	font-weight: bold;
 }
@@ -299,6 +303,11 @@ a .fa {
 	font-weight: bold;
 	text-decoration: none !important;*/
 }
+
+.profile-pos .card button {
+	margin-left: .25em;
+}
+
 
 /* PREV STYLES from WebMain.aspx? */
 #bg {
