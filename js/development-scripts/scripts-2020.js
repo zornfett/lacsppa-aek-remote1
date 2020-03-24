@@ -138,3 +138,9 @@ jQuery('.content-topnav .profile-contacts').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-contacts.html');
 });
 
+// CLIENT > INTAKE FORMS view populate
+jQuery('.content-topnav .profile-intake').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-intake.html');
+});
+
+
