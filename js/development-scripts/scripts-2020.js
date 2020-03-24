@@ -143,4 +143,8 @@ jQuery('.content-topnav .profile-intake').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-intake.html');
 });
 
+// CLIENT > INTAKE FORMS view populate
+jQuery('.content-topnav .profile-permission').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-permission.html');
+});
 
