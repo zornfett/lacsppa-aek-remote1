@@ -130,5 +130,11 @@ jQuery('.content-topnav .profile-programs').on('click', function(){
 
 // CLIENT > POS List view populate
 jQuery('.content-topnav .profile-pos').on('click', function(){
-	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-pos-list.html');
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-pos-auths.html');
 });
+
+// CLIENT > CONTACTS view populate
+jQuery('.content-topnav .profile-contacts').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-contacts.html');
+});
+
