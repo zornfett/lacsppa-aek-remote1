@@ -127,3 +127,9 @@ jQuery('.content-topnav .profile-admin').on('click', function(e){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-administration.html');
 });
 
+// CLIENT > REFERRALS view populate
+jQuery('.content-topnav .profile-referrals').on('click', function(e){
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-referrals.html');
+});
+
