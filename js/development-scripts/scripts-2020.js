@@ -122,3 +122,9 @@ jQuery('.content-topnav .profile-employment').on('click', function(){
 jQuery('.content-topnav .profile-schools').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-schools.html');
 });
+
+// CLIENT > PROGRAMS view populate
+jQuery('.content-topnav .profile-programs').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-programs.html');
+});
+
