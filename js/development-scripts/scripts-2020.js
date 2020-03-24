@@ -148,3 +148,7 @@ jQuery('.content-topnav .profile-permission').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-permission.html');
 });
 
+// CLIENT > SDP view populate
+jQuery('.content-topnav .profile-sdp').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-sdp.html');
+});
