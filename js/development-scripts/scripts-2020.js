@@ -162,3 +162,9 @@ jQuery('#main-menu .medical, .content-topnav .medical-assessments').on('click', 
 jQuery('.medical-cder').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medical-cder.html');
 });
+
+// CLIENT > MEDICAL > INFO view populate
+jQuery('.medical-info').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medical-info.html');
+});
+

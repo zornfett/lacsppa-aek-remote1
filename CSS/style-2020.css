@@ -303,11 +303,12 @@ a .fa {
 	font-weight: bold;
 	text-decoration: none !important;*/
 }
-
 .profile-pos .card button {
 	margin-left: .25em;
 }
-
+.medical-info .checkbox-group {
+	margin-left: .5em;
+}
 
 /* PREV STYLES from WebMain.aspx? */
 #bg {
