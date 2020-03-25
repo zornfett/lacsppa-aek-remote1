@@ -164,7 +164,12 @@ jQuery('.medical-cder').on('click', function(){
 });
 
 // CLIENT > MEDICAL > INFO view populate
-jQuery('.medical-info').on('click', function(){
+jQuery('.content-topnav .medical-info').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medical-info.html');
+});
+
+// CLIENT > MEDICAL > Medications view populate
+jQuery('.content-topnav .medical-meds').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medical-meds.html');
 });
 
