@@ -177,3 +177,8 @@ jQuery('.content-topnav .medical-meds').on('click', function(){
 jQuery('.content-topnav .medical-visit').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medical-visit.html');
 });
+
+// CLIENT > MEDICAL > Doctors view populate
+jQuery('.content-topnav .medical-doctors').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medical-doctors.html');
+});
