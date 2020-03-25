@@ -1,9 +1,9 @@
-				<div class="medical-meds">
+				<div class="medical-visit">
 					<div class="breadcrumbs">
 						<div class="col-md-4">
 							<div class="page-header">
 								<div class="page-title">
-									<h1>MEDICATIONS LIST</h1>
+									<h1>MEDICAL VISIT LIST</h1>
 								</div>
 							</div>
 						</div>
@@ -24,17 +24,17 @@
 						<div class="card-body card-block">
 							<div class="col-md-12">
 								<div class="col-md-1">
-									<a href="#"  data-toggle="modal" data-target="#medical-meds" title="add"><i class="fa fa-plus-circle"></i></a>
+									<a href="#" data-toggle="modal" data-target="#medical-visit" title="add"><i class="fa fa-plus-circle"></i></a>
 								</div>
-								<h4>Current Medication List</h4>
 								<table id="bootstrap-data-table" class="table table-striped table-bordered">
 									<thead>
 										<tr>
-											<th>Current Medication(s)</th>
-											<th>Dosage</th>
-											<th>Frequency</th>
-											<th>Reason For Use</th>
-											<th>View</th>
+											<td>Date</td>
+											<th>Type</th>
+											<th>Doctor</th>
+											<td>Specialty</td>
+											<td>Details</td>
+											<td>View</td>
 											<th>Edit</th>
 											<th>DELETE</th>			
 										</tr>
@@ -42,31 +42,6 @@
 									<tbody>
 										<tr>
 											<td>value</td>
-											<td>value</td>
-											<td>value</td>
-											<td>value</td>
-											<td>value</td>
-											<td><a href="#"><i class="fa fa-pencil-square-o"></i><!-- this a popular icon in 'EDIT' columns --></a></td>
-											<td>value</td>	
-										</tr>
-									</tbody>
-								</table>
-								<br>
-								<h4>Discontinued Medication List</h4>
-								<table id="bootstrap-data-table" class="table table-striped table-bordered">
-									<thead>
-										<tr>
-											<th>Discontinued Medication(s)</th>
-											<th>Dosage</th>
-											<th>Frequency</th>
-											<th>Reason For Use</th>
-											<th>View</th>
-											<th>Edit</th>
-											<th>DELETE</th>			
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
 											<td>value</td>
 											<td>value</td>
 											<td>value</td>
@@ -82,11 +57,11 @@
 					</div>
 				</div>
 				<!-- MODAL -->
-				<div class="modal fade" id="medical-meds" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+				<div class="modal fade" id="medical-visit" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="mediumModalLabel">MEDICATION DETAIL</h5>
+								<h5 class="modal-title" id="mediumModalLabel">MEDICAL VISIT DETAIL</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -106,47 +81,33 @@
 												</div>
 											</div>
 											<div class="row form-group">
-												<div class="col col-md-2"><label for="text-input" class="form-control-label">Medication</label></div>
-												<div class="col-md-5"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
-												<div class="col col-md-4"><a href="https://medlineplus.gov/druginformation.html" target="_blamk" style="text-decoration: underline;">Go to the drug listing</a></div>
-											</div>
-											<div class="row form-group">
-												<div class="col col-md-2"><label for="text-input" class="form-control-label">Dosage</label></div>
-												<div class="col-md-4"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
-												<div class="col-md-2"><label for="select" class="form-control-label">Frequency</label></div>
-												<div class="col-md-3">
-													<select name="select" id="ZZZZZ" class="form-control">
-														<option value="0">Please select</option>
-														<option value="1">TKTKTKT</option>
-													</select>
-												</div>
-											</div>
-											<div class="row form-group">
-												<div class="col col-md-3"><label for="textarea-input" class="form-control-label">Reason For Use</label></div>
-												<div class="col-md-6"><textarea name="ZZZZZZ" id="ZZZZZZ" rows="6" placeholder="" class="form-control"></textarea></div>
-												<div class="col col-md-3"><input type="checkbox" id="ZZZZZ" name="ZZZZZ" value="ZZZZZ" class="form-check-input"> <label for="select" class="form-control-label">Reason For Use Unknown</label></div>
-											</div>
-											<div class="row form-group">
-												<div class="col col-md-1"><label for="text-input" class="form-control-label">Start Date</label></div>
-												<div class="col-md-2"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
-												<div class="col-md-2"><label for="select" class="form-control-label">Prescribed By</label></div>
-												<div class="col-md-3">
-													<select name="select" id="ZZZZZ" class="form-control">
-														<option value="0">Please select</option>
-														<option value="1">TKTKTKT</option>
-													</select>
-												</div>
-												<div class="col col-md-2"><label for="text-input" class="form-control-label">M.D.'s Review Date</label></div>
-												<div class="col-md-2"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
-											</div>
-											<div class="row form-group">
-												<!-- <div class="col col-md-1"></div> -->
-												<div class="col col-md-2"><input type="checkbox" id="ZZZZZ" name="ZZZZZ" value="ZZZZZ" class="form-check-input"> <label for="select" class="form-control-label">Discontinued</label></div>
-												<div class="col col-md-2"><label for="text-input" class="form-control-label">Reason</label></div>
+												<div class="col col-md-3"><label for="text-input" class="form-control-label">Appointment Date</label></div>
 												<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
 											</div>
 											<div class="row form-group">
-												<div class="col col-md-3"><label for="textarea-input" class="form-control-label">Comments/Special Instructions</label></div>
+												<div class="col-md-3"><label for="select" class="form-control-label">Type Of Appointment</label></div>
+												<div class="col-md-6">
+													<select name="select" id="ZZZZZ" class="form-control">
+														<option value="0">Please select</option>
+														<option value="1">TKTKTKT</option>
+													</select>
+												</div>
+											</div>
+											<div class="row form-group">
+												<div class="col-md-3"><label for="select" class="form-control-label">MD/DDS/Lab/Hospital</label></div>
+												<div class="col-md-6">
+													<select name="select" id="ZZZZZ" class="form-control">
+														<option value="0">Please select</option>
+														<option value="1">TKTKTKT</option>
+													</select>
+												</div>
+											</div>
+											<div class="row form-group">
+												<div class="col col-md-3"><label for="text-input" class="form-control-label">Type Of Doctor</label></div>
+												<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
+											</div>
+											<div class="row form-group">
+												<div class="col col-md-3"><label for="textarea-input" class="form-control-label">Appointment Frequency/Purpose/ Findings/Treatment</label></div>
 												<div class="col-md-6"><textarea name="ZZZZZZ" id="ZZZZZZ" rows="6" placeholder="" class="form-control"></textarea></div>
 											</div>
 											<div class="row form-group">

@@ -173,3 +173,7 @@ jQuery('.content-topnav .medical-meds').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medical-meds.html');
 });
 
+// CLIENT > MEDICAL > Visit view populate
+jQuery('.content-topnav .medical-visit').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medical-visit.html');
+});
