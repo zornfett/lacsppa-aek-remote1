@@ -152,3 +152,13 @@ jQuery('.content-topnav .profile-permission').on('click', function(){
 jQuery('.content-topnav .profile-sdp').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/profile-sdp.html');
 });
+
+// CLIENT > MEDICAL > Assessments view populate
+jQuery('#main-menu .medical, .content-topnav .medical-assessments').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medical-assessments.html');
+});
+
+// CLIENT > MEDICAL > CDER view populate
+jQuery('.medical-cder').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medical-cder.html');
+});

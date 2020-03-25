@@ -59,7 +59,7 @@
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="profile-facesheet">Profile</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" data-toggle="modal" data-target="#client-record-template">Client Record Template</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Case Notes</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Medical</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="medical">Medical</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Medicaid Waiver</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">POS List</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">SIF List</a></li>
