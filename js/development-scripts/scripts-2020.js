@@ -192,3 +192,9 @@ jQuery('#main-menu .medicaid-waiver').on('click', function(){
 jQuery('#main-menu .pos-list').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/pos-list.html');
 });
+
+// CLIENT > SIR LIST view populate
+jQuery('#main-menu .sir-list').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/sir-list.html');
+});
+
