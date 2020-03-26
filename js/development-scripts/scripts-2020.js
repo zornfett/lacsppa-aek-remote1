@@ -198,3 +198,7 @@ jQuery('#main-menu .sir-list').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/sir-list.html');
 });
 
+// CLIENT > DOC LIST (landing) view populate
+jQuery('#main-menu .doc-list').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-landing.html');
+});
