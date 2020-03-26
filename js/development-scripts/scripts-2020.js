@@ -182,3 +182,8 @@ jQuery('.content-topnav .medical-visit').on('click', function(){
 jQuery('.content-topnav .medical-doctors').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medical-doctors.html');
 });
+
+// CLIENT > MEDICAID WAIVER view populate
+jQuery('#main-menu .medicaid-waiver').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medicaid-waiver.html');
+});
