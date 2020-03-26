@@ -310,6 +310,18 @@ a .fa {
 	margin-left: .5em;
 }
 
+.pos-list button {
+	margin-bottom: 1em;
+}
+
+.pos-list .float-right {
+	text-align: right;
+}
+
+.pos-list table th {
+	text-align: center;
+}
+
 /* PREV STYLES from WebMain.aspx? */
 #bg {
 	display: block;

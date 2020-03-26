@@ -61,7 +61,7 @@
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Case Notes</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="medical">Medical</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="medicaid-waiver">Medicaid Waiver</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">POS List</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="pos-list">POS List</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">SIF List</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Document List</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">IFSP List</a></li>

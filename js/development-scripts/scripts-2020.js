@@ -187,3 +187,8 @@ jQuery('.content-topnav .medical-doctors').on('click', function(){
 jQuery('#main-menu .medicaid-waiver').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/medicaid-waiver.html');
 });
+
+// CLIENT > POS LIST view populate
+jQuery('#main-menu .pos-list').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/pos-list.html');
+});
