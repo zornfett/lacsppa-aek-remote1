@@ -204,6 +204,11 @@ jQuery('#main-menu .doc-list').on('click', function(){
 });
 
 // CLIENT > DOCLIST INFO view populate
-jQuery('#main-menu .doclist-info').on('click', function(){
+jQuery('#main-menu .doclist-info, content-topnav .doclist-info').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-info.html');
+});
+
+// CLIENT > DOCLIST SERVICES view populate
+jQuery('.content-topnav .doclist-services').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-services.html');
 });
