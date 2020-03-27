@@ -212,3 +212,10 @@ jQuery('#main-menu .doclist-info, content-topnav .doclist-info').on('click', fun
 jQuery('.content-topnav .doclist-services').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-services.html');
 });
+
+// CLIENT > DOCLIST SERVICES view populate
+jQuery('.content-topnav .doclist-health').on('click', function(e){
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-health.html');
+});
+
