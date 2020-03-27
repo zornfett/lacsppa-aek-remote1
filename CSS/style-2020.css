@@ -322,6 +322,10 @@ a .fa {
 	text-align: center;
 }
 
+.doclist-info .form-check-label {
+	margin-left: 1em;
+}
+
 /* PREV STYLES from WebMain.aspx? */
 #bg {
 	display: block;

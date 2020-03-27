@@ -202,3 +202,8 @@ jQuery('#main-menu .sir-list').on('click', function(){
 jQuery('#main-menu .doc-list').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-landing.html');
 });
+
+// CLIENT > DOCLIST INFO view populate
+jQuery('#main-menu .doclist-info').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-info.html');
+});
