@@ -46,10 +46,98 @@
 				</button>
 				<img class="logo" src="Images/logos/lanterman-logo.png" />
 			</div>
+
 			<!-- TOP HORIZ NAV -->
 			<div id="main-menu" class="main-menu collapse navbar-collapse">
+				<div class="mobile-profile-notifs" style="display: none;">
+					<div class="row form-group">
+						<!-- mail notifications - MOBILE -->
+						<div class="col">
+							<div class="dropdown for-message">
+								<button class="btn dropdown-toggle" type="button"
+									id="message"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="ti-email"></i>
+									<span class="count">9</span>
+								</button>
+								<div class="dropdown-menu" aria-labelledby="message">
+									<p class="red">You have 4 Mails</p>
+									<a class="dropdown-item media bg-flat-color-1" href="#">
+									<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
+									<span class="message media-body">
+									<span class="name float-left">TKTnameTKT</span>
+									<span class="time float-right">Just now</span>
+									<p>Lorem ipsum dolor sit amet, consectetur</p>
+									</span>
+								</a>
+								<a class="dropdown-item media bg-flat-color-2" href="#">
+									<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
+									<span class="message media-body">
+										<span class="name float-left">TKTnameTKT</span>
+										<span class="time float-right">5 minutes ago</span>
+										<p>Lorem ipsum dolor sit amet, consectetur</p>
+									</span>
+								</a>
+								<a class="dropdown-item media bg-flat-color-1" href="#">
+									<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
+									<span class="message media-body">
+									<span class="name float-left">TKTnameTKT</span>
+									<span class="time float-right">10 minutes ago</span>
+									<p>Lorem ipsum dolor sit amet, consectetur</p></span>
+								</a>
+								<a class="dropdown-item media bg-flat-color-2" href="#">
+									<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
+									<span class="message media-body">
+										<span class="name float-left">TKTnameTKT</span>
+										<span class="time float-right">15 minutes ago</span>
+											<p>Lorem ipsum dolor sit amet, consectetur</p>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- bell notifications - MOBILE -->
+						<div class="col">
+							<div class="dropdown for-notification">
+								<button class="btn dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-bell"></i>
+									<span class="count">5</span>
+								</button>
+								<div class="dropdown-menu" aria-labelledby="notification">
+									<p class="red">You have 3 Notification</p>
+									<a class="dropdown-item media bg-flat-color-1" href="#">
+									<i class="fa fa-check"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</a>
+								<a class="dropdown-item media bg-flat-color-2" href="#">
+									<i class="fa fa-info"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</a>
+								<a class="dropdown-item media bg-flat-color-1" href="#">
+									<i class="fa fa-warning"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</a>
+								</div>
+							</div>
+						</div>
+						<!-- user profile - MOBILE -->
+						<div class="col float-right">
+							<div class="user-area dropdown float-right">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img class="user-avatar rounded-circle" src="img/dummy-avatar.jpg" alt="[userName]">
+								</a>
+								<div class="user-menu dropdown-menu">
+									<a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+									<a class="nav-link" href="#"><i class="fa fa-user"></i> Notifications <span class="count">13</span></a>
+									<a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+									<a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<ul class="nav navbar-nav">
-					<h3 class="menu-title">&nbsp;</h3><!-- !!! NON-SEMANT / change to styled LI !!! -->
+					<div class="menu-title"></div>
 					<li class="menu-item-no-children dropdown">
 						<a href="#" class="dropdown-toggle home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>HOME</a>
 					</li>
@@ -181,75 +269,77 @@
 								<button class="search-close" type="submit"><i class="fa fa-close"></i></button>
 							</form>
 						</div>
-						<!-- 'BELL' NOTIFICATIONS -->
-						<div class="dropdown for-notification">
-							<button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fa fa-bell"></i>
-								<span class="count bg-danger">5</span>
-							</button>
-							<div class="dropdown-menu" aria-labelledby="notification">
-								<p class="red">You have 3 Notification</p>
+						<span class="message-notifs">
+							<!-- 'BELL' NOTIFICATIONS -->
+							<div class="dropdown for-notification">
+								<button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-bell"></i>
+									<span class="count bg-danger">5</span>
+								</button>
+								<div class="dropdown-menu" aria-labelledby="notification">
+									<p class="red">You have 3 Notification</p>
+									<a class="dropdown-item media bg-flat-color-1" href="#">
+									<i class="fa fa-check"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</a>
+								<a class="dropdown-item media bg-flat-color-2" href="#">
+									<i class="fa fa-info"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</a>
 								<a class="dropdown-item media bg-flat-color-1" href="#">
-								<i class="fa fa-check"></i>
-								<p>Lorem ipsum dolor sit amet, consectetur.</p>
-							</a>
-							<a class="dropdown-item media bg-flat-color-2" href="#">
-								<i class="fa fa-info"></i>
-								<p>Lorem ipsum dolor sit amet, consectetur.</p>
-							</a>
-							<a class="dropdown-item media bg-flat-color-1" href="#">
-								<i class="fa fa-warning"></i>
-								<p>Lorem ipsum dolor sit amet, consectetur.</p>
-							</a>
+									<i class="fa fa-warning"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</a>
+								</div>
 							</div>
-						</div>
-						<!-- MAIL NOTIFICATIONS -->
-						<div class="dropdown for-message">
-							<button class="btn btn-secondary dropdown-toggle" type="button"
-								id="message"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="ti-email"></i>
-								<span class="count bg-primary">9</span>
-							</button>
-							<div class="dropdown-menu" aria-labelledby="message">
-								<p class="red">You have 4 Mails</p>
-								<a class="dropdown-item media bg-flat-color-1" href="#">
-								<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
-								<span class="message media-body">
-								<span class="name float-left">TKTnameTKT</span>
-								<span class="time float-right">Just now</span>
-									<p>Lorem ipsum dolor sit amet, consectetur</p>
-								</span>
-							</a>
-							<a class="dropdown-item media bg-flat-color-2" href="#">
-								<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
-								<span class="message media-body">
+							<!-- MAIL NOTIFICATIONS -->
+							<div class="dropdown for-message">
+								<button class="btn btn-secondary dropdown-toggle" type="button"
+									id="message"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="ti-email"></i>
+									<span class="count bg-primary">9</span>
+								</button>
+								<div class="dropdown-menu" aria-labelledby="message">
+									<p class="red">You have 4 Mails</p>
+									<a class="dropdown-item media bg-flat-color-1" href="#">
+									<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
+									<span class="message media-body">
 									<span class="name float-left">TKTnameTKT</span>
-									<span class="time float-right">5 minutes ago</span>
-										<p>Lorem ipsum dolor sit amet, consectetur</p>
-								</span>
-							</a>
-							<a class="dropdown-item media bg-flat-color-1" href="#">
-								<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
-								<span class="message media-body">
-									<span class="name float-left">TKTnameTKT</span>
-									<span class="time float-right">10 minutes ago</span>
-										<p>Lorem ipsum dolor sit amet, consectetur</p>
-								</span>
-							</a>
-							<a class="dropdown-item media bg-flat-color-2" href="#">
-								<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
-								<span class="message media-body">
-									<span class="name float-left">TKTnameTKT</span>
-									<span class="time float-right">15 minutes ago</span>
+									<span class="time float-right">Just now</span>
 										<p>Lorem ipsum dolor sit amet, consectetur</p>
 									</span>
 								</a>
+								<a class="dropdown-item media bg-flat-color-2" href="#">
+									<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
+									<span class="message media-body">
+										<span class="name float-left">TKTnameTKT</span>
+										<span class="time float-right">5 minutes ago</span>
+											<p>Lorem ipsum dolor sit amet, consectetur</p>
+									</span>
+								</a>
+								<a class="dropdown-item media bg-flat-color-1" href="#">
+									<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
+									<span class="message media-body">
+										<span class="name float-left">TKTnameTKT</span>
+										<span class="time float-right">10 minutes ago</span>
+											<p>Lorem ipsum dolor sit amet, consectetur</p>
+									</span>
+								</a>
+								<a class="dropdown-item media bg-flat-color-2" href="#">
+									<span class="photo media-left"><img alt="userName" src="img/dummy-avatar.jpg"></span>
+									<span class="message media-body">
+										<span class="name float-left">TKTnameTKT</span>
+										<span class="time float-right">15 minutes ago</span>
+											<p>Lorem ipsum dolor sit amet, consectetur</p>
+										</span>
+									</a>
+								</div>
 							</div>
-						</div>	
+						</span>	
 					</div>
 				</div>
-				<div class="col-sm-5">
+				<div class="col-sm-5 user-profile">
 					<div class="user-area dropdown float-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<img class="user-avatar rounded-circle" src="img/dummy-avatar.jpg" alt="[userName]">
@@ -408,6 +498,11 @@
 		$(document).ready(function() {
 			$('#bootstrap-data-table-export').DataTable();
 		} );
+
+		// this displays mobile profile & notification elements when necess
+		jQuery('button.navbar-toggler').on('click', function(){
+			jQuery('.mobile-profile-notifs').toggle(); // css('display', 'block');
+		});
 	</script>
 	<!-- SUFEE MAP JS FILES - NOT IN USE
 	<script src="js/per-sufee/vendors/jqvmap/dist/jquery.vmap.min.js"></script>

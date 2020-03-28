@@ -107,6 +107,11 @@ header .form-inline {
 	height: inherit !important;
 }
 
+/* hide mobile profile/messaging butts */
+aside .mobile-profile-notifs {
+	display: none;
+}
+
 .form-inline .form-control {
 	width: 100% !important;
 }
@@ -358,24 +363,87 @@ a .fa {
 
 /* Responsive Styles */
 @media (max-width: 1368px) {
-	
+/*	div {
+		outline: 2px dotted blue;
+	}*/
 }
 
 @media (max-width: 1024px) {
-	
+/*	div {
+		outline: 2px dotted green;
+	}*/
+
 }
 
 @media (max-width: 992px) {
-	
+/*	div {
+		outline: 2px dotted orange;
+	}*/
+
 }
 
 @media (max-width: 575.99px) {
+	div {
+		outline: 2px dotted red;
+	}
+	.col {
+		outline: 2px SOLID green !important;
+	}
+
 	ul.nav.navbar-nav {
 		background-color: #fff;
 	}
+
 	aside.left-panel .navbar .navbar-nav li.menu-item-has-children a:before {
 		right: 20px;
 	}
+
+	aside .mobile-profile-notifs {
+		background-color: #fff;
+	}
+
+	aside .mobile-profile-notifs .form-group {
+		margin-bottom: 0;
+	}
+
+	aside .mobile-profile-notifs button {
+		background-color: #fff;
+		color: #000;
+	}
+
+	aside .user-area .user-avatar {
+		margin-right: .5em;
+	}
+
+	aside img.logo {
+		width: 62%;
+		height: auto;
+	}
+
+	header .user-profile,
+	header .message-notifs {
+		display: none;
+	}
+
+	header .form-inline {
+		top: 56px;
+	}
+
+	.SHL-RAM {
+		position: static;
+		text-align: center;
+	}
+
+	.nav-link, /* repercussions? RBB */
+	.SHL-RAM .nav-link { 
+		padding: 0 !important;
+	}
+
+	.SHL-RAM li {
+		margin-top: .5em;
+		padding: .5em !important;
+	}
+
 }
 
 /* DUMMY STYLES */
