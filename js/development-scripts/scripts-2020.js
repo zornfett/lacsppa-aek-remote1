@@ -220,14 +220,18 @@ jQuery('.content-topnav .doclist-health').on('click', function(e){
 });
 
 // CLIENT > DOCLIST SURVEY view populate
-jQuery('.content-topnav .doclist-survey').on('click', function(e){
-	// e.stopPropagation();
+jQuery('.content-topnav .doclist-survey').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-survey.html');
 });
 
 // CLIENT > DOCLIST SURVEY view populate
-jQuery('.content-topnav .doclist-finance').on('click', function(e){
-	// e.stopPropagation();
+jQuery('.content-topnav .doclist-finance').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-finance.html');
 });
+
+// CLIENT > DOCLIST RESIDENT view populate
+jQuery('.content-topnav .doclist-resident').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-resident.html');
+});
+
 
