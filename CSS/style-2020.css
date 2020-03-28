@@ -116,6 +116,10 @@ aside .mobile-profile-notifs {
 	width: 100% !important;
 }
 
+.form-check-inline label {
+	margin-right: .5em;
+}
+
 .topnav-controls {
 	position: relative;
 	background-color: #b7d4e2; 
@@ -172,7 +176,7 @@ aside .mobile-profile-notifs {
 }
 
 .card .card-body h4 {
-	margin-bottom: 1em;
+	margin-bottom: 1.25em;
 }
 
 .card .card-body .form-control-label {

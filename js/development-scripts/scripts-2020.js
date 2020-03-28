@@ -225,3 +225,9 @@ jQuery('.content-topnav .doclist-survey').on('click', function(e){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-survey.html');
 });
 
+// CLIENT > DOCLIST SURVEY view populate
+jQuery('.content-topnav .doclist-finance').on('click', function(e){
+	// e.stopPropagation();
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-finance.html');
+});
+
