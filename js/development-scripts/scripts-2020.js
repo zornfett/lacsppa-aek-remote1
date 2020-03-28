@@ -234,4 +234,7 @@ jQuery('.content-topnav .doclist-resident').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-resident.html');
 });
 
-
+// CLIENT > DOCLIST FINALIZE view populate
+jQuery('.content-topnav .doclist-final').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-final.html');
+});

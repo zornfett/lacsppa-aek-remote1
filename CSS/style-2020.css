@@ -198,6 +198,10 @@ aside .mobile-profile-notifs {
 	margin-left: .5em;
 }
 
+.card-body .button-group button {
+	margin-left: .5em;
+}
+
 .breadcrumbs .card-header-icons a {
 	margin-top: .25em;
 }
