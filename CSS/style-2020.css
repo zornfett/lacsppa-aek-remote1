@@ -383,12 +383,9 @@ a .fa {
 }
 
 @media (max-width: 575.99px) {
-	div {
+/*	div {
 		outline: 2px dotted red;
-	}
-	.col {
-		outline: 2px SOLID green !important;
-	}
+	}*/
 
 	ul.nav.navbar-nav {
 		background-color: #fff;
