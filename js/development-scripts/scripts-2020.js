@@ -238,3 +238,9 @@ jQuery('.content-topnav .doclist-resident').on('click', function(){
 jQuery('.content-topnav .doclist-final').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-final.html');
 });
+
+// CLIENT > DOCLIST ADDENDUMS view populate
+jQuery('.content-topnav .doclist-add').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-add.html');
+});
+
