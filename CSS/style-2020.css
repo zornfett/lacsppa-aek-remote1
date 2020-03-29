@@ -311,18 +311,16 @@ td.edit-pencil {
 	list-style: none;
 	margin: 0 auto;
 }
+
 .tickler-client-results li {
 	display: inline-block;
 	/*padding: 0 .5em;*/
 }
-.tickler-client-results li a {
-/*	color: #00274e;
-	font-weight: bold;
-	text-decoration: none !important;*/
-}
+
 .profile-pos .card button {
 	margin-left: .25em;
 }
+
 .medical-info .checkbox-group {
 	margin-left: .5em;
 }

@@ -244,3 +244,12 @@ jQuery('.content-topnav .doclist-add').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-add.html');
 });
 
+// CLIENT > DOCLIST QUARTERLIES view populate
+jQuery('.content-topnav .doclist-quarter').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-quarter.html');
+});
+
+// CLIENT > DOCLIST ANNUAL CONTACTS view populate
+jQuery('.content-topnav .doclist-contacts').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-contacts.html');
+});
