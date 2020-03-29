@@ -377,10 +377,10 @@
 		<div class="topnav-controls">
 			<div class="SHL-RAM">
 				<ul>
-					<li><a class="nav-link" href="#">Restore</a></li>
-					<li><a class="nav-link" href="#">Add</a></li>
-					<li><a class="nav-link" href="#"></i>Modify</a></li>
-					<li><a class="nav-link" href="#">Support</a></li>
+					<li><a class="nav-link" href="#" data-toggle="modal" data-target="#restore-modal">Restore</a></li>
+					<li><a class="nav-link" href="#">Add</a></li><!-- server error on QA2 -->
+					<li><a class="nav-link" href="#"></i>Modify</a></li><!-- server error on QA2 -->
+					<li><a class="nav-link" href="http://www.kea-live.com/knowledgebase" target="_blank">Support</a></li><!-- NON-SECURE URL -->
 					<li><a class="nav-link" href="#">Help</a></li>
 					<li><a class="nav-link" href="#">Logout</a></li>
 				</ul>
@@ -456,6 +456,31 @@
 				<div class="modal-footer">
 	<!-- 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button> -->
 					<button type="button" class="btn btn-primary">Print</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div class="modal fade" id="restore-modal" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-body card-block">
+								<p>Are you sure you want to restore default dash board?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">OK</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
 				</div>
 			</div>
 		</div>
