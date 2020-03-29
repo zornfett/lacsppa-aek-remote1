@@ -286,6 +286,10 @@ a .fa {
 	 /* global? */
 } 
 
+td.edit-pencil {
+	text-align: center;
+}
+
 .content-topnav li a {
 	font-size: .8em;
 }
