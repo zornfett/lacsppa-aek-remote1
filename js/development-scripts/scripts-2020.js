@@ -256,5 +256,13 @@ jQuery('.content-topnav .doclist-contacts').on('click', function(){
 
 // CLIENT > IFSP landing view populate
 jQuery('#main-menu .ifsp-landing').on('click', function(){
-	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/client-ifsp-landing.html');
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-landing.html');
 });
+
+// CLIENT > IFSP Identifying view populate
+jQuery('.content-topnav .ifsplist-identifying, .ifsp-landing .dummy-link').on('click', function(){
+	console.log('oink');
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-identifying.html');
+});
+
+
