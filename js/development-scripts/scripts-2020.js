@@ -261,8 +261,12 @@ jQuery('#main-menu .ifsp-landing').on('click', function(){
 
 // CLIENT > IFSP Identifying view populate
 jQuery('.content-topnav .ifsplist-identifying, .ifsp-landing .dummy-link').on('click', function(){
-	console.log('oink');
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-identifying.html');
 });
 
+// CLIENT > IFSP Identifying view populate
+jQuery('.content-topnav .ifsplist-concerns').on('click', function(){
+	console.log('oink');
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-concerns.html');
+});
 
