@@ -152,7 +152,7 @@
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="pos-list">POS List</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="sir-list">SIR List</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="doc-list">Document List</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">IFSP List</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="ifsp-landing">IFSP List</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-no-children dropdown">

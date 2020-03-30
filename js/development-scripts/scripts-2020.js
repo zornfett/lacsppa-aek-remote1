@@ -253,3 +253,8 @@ jQuery('.content-topnav .doclist-quarter').on('click', function(){
 jQuery('.content-topnav .doclist-contacts').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/doclist-contacts.html');
 });
+
+// CLIENT > IFSP landing view populate
+jQuery('#main-menu .ifsp-landing').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/client-ifsp-landing.html');
+});
