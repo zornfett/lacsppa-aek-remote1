@@ -278,3 +278,9 @@ jQuery('.content-topnav .ifsplist-health').on('click', function(){
 jQuery('.content-topnav .ifsplist-outcomes').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-outcomes.html');
 });
+
+// CLIENT > IFSP Finalize/Signatures view populate
+jQuery('.content-topnav .ifsplist-finalize').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-final.html');
+});
+
