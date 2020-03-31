@@ -266,14 +266,15 @@ jQuery('.content-topnav .ifsplist-identifying, .ifsp-landing .dummy-link').on('c
 
 // CLIENT > IFSP Identifying view populate
 jQuery('.content-topnav .ifsplist-concerns').on('click', function(){
-	console.log('oink');
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-concerns.html');
 });
 
 // CLIENT > IFSP Dev/Health view populate
 jQuery('.content-topnav .ifsplist-health').on('click', function(){
-	console.log('oink');
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-health.html');
 });
 
-
+// CLIENT > IFSP Outcomes view populate
+jQuery('.content-topnav .ifsplist-outcomes').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-outcomes.html');
+});
