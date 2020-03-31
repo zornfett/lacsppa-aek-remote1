@@ -333,4 +333,8 @@ jQuery('.admin-userlist .add').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-userlist-addpage.html');
 });
 
+// ADMIN - User List /special permissions' page view populate
+jQuery('.admin-userlist .special-permissions').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-userlist-specperms.html');
+});
 
