@@ -284,3 +284,14 @@ jQuery('.content-topnav .ifsplist-finalize').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-final.html');
 });
 
+// CLIENT > IFSP Periodic Review view populate
+jQuery('.content-topnav .ifsplist-review').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-review.html');
+});
+
+// CLIENT > IFSP Transition Plan view populate
+jQuery('.content-topnav .ifsplist-transition').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-transition.html');
+});
+
+
