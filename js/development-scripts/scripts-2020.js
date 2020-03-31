@@ -309,4 +309,7 @@ jQuery('#main-menu .resource-profile, .content-topnav .resource-profile').on('cl
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/resource/resource-profile.html');
 });
 
+jQuery('#main-menu .my-settings').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/my-settings/my-settings.html');
+});
 
