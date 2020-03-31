@@ -270,3 +270,10 @@ jQuery('.content-topnav .ifsplist-concerns').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-concerns.html');
 });
 
+// CLIENT > IFSP Dev/Health view populate
+jQuery('.content-topnav .ifsplist-health').on('click', function(){
+	console.log('oink');
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-health.html');
+});
+
+
