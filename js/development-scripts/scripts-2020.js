@@ -313,3 +313,7 @@ jQuery('#main-menu .my-settings').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/my-settings/my-settings.html');
 });
 
+jQuery('#main-menu .my-tickler').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/my-tickler/my-tickler.html');
+});
+
