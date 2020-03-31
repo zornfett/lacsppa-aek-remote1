@@ -232,7 +232,7 @@
 						<a href="#" class="dropdown-toggle admin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>ADMINISTRATION</a>
 						<ul class="sub-menu children dropdown-menu">
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Users</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; User List</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="admin-userlist">&mdash; User List</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; User Group</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Labels</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Account Settings</a></li>

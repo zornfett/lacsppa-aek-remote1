@@ -1,12 +1,10 @@
-// THIS INPUTS VIEW HTML INTO 
-
+// HOME view
 jQuery('#main-menu .home').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/home.html');
 });
 
 // CLIENT views
 jQuery('#main-menu .client-default').on('click', function(){
-	// // e.stopPropagation();
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/client-default.html');
 });
 
@@ -323,4 +321,16 @@ jQuery('#main-menu .my-tickler').on('click', function(){
 jQuery('#main-menu .search').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/search/search-consumer.html');
 });
+
+// ADMIN - User List view populate
+jQuery('.navbar .sub-menu .admin-userlist').on('click', function(){
+	console.log('boink');
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-userlist.html');
+});
+
+// ADMIN - User List ADD page view populate
+jQuery('.admin-userlist .add').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-userlist-addpage.html');
+});
+
 
