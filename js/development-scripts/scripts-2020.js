@@ -309,11 +309,18 @@ jQuery('#main-menu .resource-profile, .content-topnav .resource-profile').on('cl
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/resource/resource-profile.html');
 });
 
+// MY SETTINGS view populate
 jQuery('#main-menu .my-settings').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/my-settings/my-settings.html');
 });
 
+// MY TICKLER view populate (there is also HTML for the ADD button page)
 jQuery('#main-menu .my-tickler').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/my-tickler/my-tickler.html');
+});
+
+// SEARCH - Consumer view populate
+jQuery('#main-menu .search').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/search/search-consumer.html');
 });
 
