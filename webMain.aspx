@@ -201,7 +201,7 @@
 					<li class="menu-item-has-children dropdown">
 						<a href="#" class="dropdown-toggle resource" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-square"></i>RESOURCE</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Profile</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="resource-profile">Profile</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">ID Notes</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Monitoring Tools/CAP</a></li>
 						</ul>

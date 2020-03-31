@@ -299,8 +299,14 @@ jQuery('.content-topnav .ifsplist-addendum').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-addendum.html');
 });
 
-// CLIENT > IFSP Addendum view populate
+// RESOURCE landing page view populate
 jQuery('#main-menu .resource').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/resource/resource-landing.html');
 });
+
+// RESOURCE > Profile view populate
+jQuery('#main-menu .resource-profile, .content-topnav .resource-profile').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/resource/resource-profile.html');
+});
+
 
