@@ -84,7 +84,7 @@
 															<option value="1">TKTKTKT</option>
 														</select>
 													</div>
-													<div class="col-md-1"><button type="button" class="btn btn-primary">Add</button></div>
+													<div class="col-md-1"><button type="button" class="btn btn-primary add" data-dismiss="modal">Add</button></div>
 												</div>
 												<div class="row form-group">
 													<div class="col col-md-2"><label for="text-input" class="form-control-label">Days To Finish Each Task</label></div>
@@ -121,10 +121,6 @@
 													<div class="col col-md-2"><label for="text-input" class="form-control-label">Description</label></div>
 													<div class="col-md-6"><input type="text" id="ZZZZZ" name="TKTKTKT" placeholder="" class="form-control"></div>
 												</div>
-
-
-											<!-- </div>
-											<div class="col-md-6"> -->
 											</div>
 										</div>
 									</div>
@@ -132,6 +128,12 @@
 							</div>
 						</div>
 					</div>
+<!-- 					<script type="text/javascript">
+					jQuery('.my-tickler-modal .add').on('click', function(){
+						console.log('addd!');
+						jQuery('#insert-view-content-here').load('/KEA_QA/content-views/my-tickler/my-tickler-ADDpage.html');
+					});
+					</script> -->	
 				</div>
-				<!-- script below necessary ONLY for development #discard -->
+				<!-- script below necessary ONLY for development #discard -->		
 				<script src="/KEA_QA/js/development-scripts/scripts-2020.js"></script>
