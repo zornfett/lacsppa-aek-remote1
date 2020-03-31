@@ -227,9 +227,11 @@ a .fa {
 .fa-square.pink { color: pink; }
 .fa-square.yellow { color: yellow; }
 .fa-square.red { color: red; }
+.fa-square.orange { color: orange; }
 .fa-circle.red { color: red; }
 .fa-circle.green { color: green; }
 .fa-circle.blue { color: blue; }
+.fa-circle.ltblue { color: #00fcff; }
 .fa-circle.purple { color: purple; }
 
 .bg-kea-ltblue {
@@ -261,11 +263,11 @@ a .fa {
 	width: 20em !important;
 } */
 
-.client-default .legend ul {
+.legend ul {
 	list-style: none;
 	padding: 0 1em;
 }
-.client-default .legend li {
+.legend li {
 	display: inline-block;
 	font-size: .75em;
 	padding: 0 .5em;

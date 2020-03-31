@@ -298,3 +298,9 @@ jQuery('.content-topnav .ifsplist-transition').on('click', function(){
 jQuery('.content-topnav .ifsplist-addendum').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/client/ifsplist-addendum.html');
 });
+
+// CLIENT > IFSP Addendum view populate
+jQuery('#main-menu .resource').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/resource/resource-landing.html');
+});
+
