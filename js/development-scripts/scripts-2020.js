@@ -356,3 +356,25 @@ jQuery('.navbar .sub-menu .admin-labels').on('click', function(){
 jQuery('.admin-labels .add').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-labels-addpage.html');
 });
+
+// ADMIN - Acct Settings (security) view populate
+jQuery('.navbar .sub-menu .admin-acct-settings, .content-topnav .security').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-acct-security.html');
+});
+
+// ADMIN - Acct Settings Misc view populate
+jQuery('.content-topnav .misc').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-acct-misc.html');
+});
+
+// ADMIN - Acct Settings Holiday view populate
+jQuery('.content-topnav .holiday').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-acct-holiday.html');
+});
+
+// ADMIN - Acct Settings Work Scheds view populate
+jQuery('.content-topnav .schedules').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-acct-working.html');
+});
+
+

@@ -235,7 +235,7 @@
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="admin-userlist">&mdash; User List</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="admin-usergroup">&mdash; User Group</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="admin-labels">Labels</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Account Settings</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="admin-acct-settings">Account Settings</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Tools</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; CaseNote Type</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; CaseNote Template</a></li>
