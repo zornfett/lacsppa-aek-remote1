@@ -346,3 +346,13 @@ jQuery('.navbar .sub-menu .admin-usergroup').on('click', function(){
 jQuery('.admin-usergroup .add').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-usergroup-addpage.html');
 });
+
+// ADMIN - Labels view populate
+jQuery('.navbar .sub-menu .admin-labels').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-labels.html');
+});
+
+// ADMIN - Labels ADD page view populate
+jQuery('.admin-labels .add').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-labels-addpage.html');
+});
