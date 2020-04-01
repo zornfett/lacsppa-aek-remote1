@@ -233,7 +233,7 @@
 						<ul class="sub-menu children dropdown-menu">
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Users</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="admin-userlist">&mdash; User List</a></li>
-							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">&mdash; User Group</a></li>
+							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="admin-usergroup">&mdash; User Group</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Labels</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Account Settings</a></li>
 							<li><!-- <i class="fa fa-caret-right"></i> --><a href="#" class="TKTKTK">Tools</a></li>

@@ -324,7 +324,6 @@ jQuery('#main-menu .search').on('click', function(){
 
 // ADMIN - User List view populate
 jQuery('.navbar .sub-menu .admin-userlist').on('click', function(){
-	console.log('boink');
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-userlist.html');
 });
 
@@ -338,3 +337,12 @@ jQuery('.admin-userlist .special-permissions').on('click', function(){
 	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-userlist-specperms.html');
 });
 
+// ADMIN - UserGroup view populate
+jQuery('.navbar .sub-menu .admin-usergroup').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-usergroup.html');
+});
+
+// ADMIN - UserGroup ADD page view populate
+jQuery('.admin-usergroup .add').on('click', function(){
+	jQuery('#insert-view-content-here').load('/KEA_QA/content-views/admin/admin-usergroup-addpage.html');
+});
